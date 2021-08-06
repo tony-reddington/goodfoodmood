@@ -1,28 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /* base.html style */
 
 @media (max-width: 280px) {
-    header.masthead .page-heading h1, header.masthead .page-heading .h1, header.masthead .site-heading h1, 
+
+    header.masthead .page-heading h1,
+    header.masthead .page-heading .h1,
+    header.masthead .site-heading h1,
     header.masthead .site-heading .h1 {
         font-size: 1.75rem;
     }
-    header.masthead .page-heading .subheading, header.masthead .site-heading .subheading {
+
+    header.masthead .page-heading .subheading,
+    header.masthead .site-heading .subheading {
         font-size: 0.9rem;
     }
 }
 
 @media (min-width: 281px) and (max-width: 576px) {
-    header.masthead .page-heading h1, header.masthead .page-heading .h1, header.masthead .site-heading h1, 
+
+    header.masthead .page-heading h1,
+    header.masthead .page-heading .h1,
+    header.masthead .site-heading h1,
     header.masthead .site-heading .h1 {
         font-size: 2rem;
     }
-    header.masthead .page-heading .subheading, header.masthead .site-heading .subheading {
+
+    header.masthead .page-heading .subheading,
+    header.masthead .site-heading .subheading {
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 576px) {
-    .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, 
-    .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-sm,
+    .navbar>.container-md,
+    .navbar>.container-lg,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
         flex-wrap: nowrap;
+    }
 }
+
+/* recipe card style on index.html */
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    margin: 20px 0px;
+    height: 100%;
+    position: relative;
+    border: 1px solid #444444;
+}
+
+.card-control {
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-title {
+    height: 3.5rem;
+    color: #ffffff;
+    background-color: #018D45;
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1.25rem;
+    height: 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.recipe-btn-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-btn-div .btn {
+    height: 40px;
+    padding: 10px;
+    margin: auto 0;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.shadow-effect {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 360px) {
+    .card {
+        height: 90%;
+    }
+    
+    .card-control {
+        margin-bottom: 0px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        font-family: Roboto;
+    }
+
+    .recipe-btn-div .btn {
+        margin: 0 0 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 90%;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+        height: 30%;
+    }
+
+    .recipe-btn-div .btn {
+        height: 40px;
+        padding: 10px;
+        margin: 0 0 30px 0;
+        border-radius: 10px;
+    }
 }
