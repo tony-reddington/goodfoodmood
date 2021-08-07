@@ -9,7 +9,7 @@
 }
 
 .secondary-color {
-    background-color: #754865;
+    background-color: #754865 !important;
 }
 
 /* base.html style */
@@ -55,6 +55,10 @@
     .navbar>.container-xxl {
         flex-wrap: nowrap;
     }
+}
+
+.copyright-text {
+    color: #737b82 !important;
 }
 
 /* recipe card style on index.html */
