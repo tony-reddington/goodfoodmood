@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.main-font {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 /* base.html style */
+
+.navbar-brand {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
 
 @media (max-width: 280px) {
 
@@ -72,7 +83,6 @@
     background-color: #018D45;
     font-size: 1rem;
     padding: 1rem 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .card img {
@@ -87,7 +97,6 @@
 .card-text {
     font-size: 1.25rem;
     height: 80%;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .recipe-btn-div {
@@ -100,7 +109,6 @@
     padding: 10px;
     margin: auto 0;
     border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .shadow-effect {
