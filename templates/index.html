@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-
+<!-- Bootstrap card for each Recipe data iteration -->
 <div class="container">
     <div class="row">
         {% for recipe in recipes %}
         <div class="card-control col-12 col-md-4">
             <div class="card shadow-effect">
-                <h5 class="card-title text-center">{{ recipe.recipe_name }}</h5>
+                <h5 class="card-title text-center main-font main-color">{{ recipe.recipe_name }}</h5>
                 <img src="{{ recipe.image_url }}" class="card-img-top" alt="{{ recipe.recipe_name }}">
                 <div class="card-body">
-                    <p class="card-text">{{ recipe.description }}</p>
+                    <p class="card-text main-font">{{ recipe.description }}</p>
                 </div>
                 <div class="recipe-btn-div">
-                    <a href="#" class="btn btn-success shadow-effect">Recipe Info</a>
+                    <a href="#" class="btn btn-success shadow-effect main-font main-color">Recipe Info</a>
                 </div>
             </div>
         </div>
