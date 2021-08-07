@@ -25,15 +25,14 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="{{ url_for('index') }}"><span id="logotext-good">Good</span><span
-                    id="logotext-food">Food</span><span id="logotext-mood">Mood</span></a>
+            <a class="navbar-brand main-font" href="{{ url_for('index') }}">GoodFoodMood</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0 main-font">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('index') }}">Home</a>
                     </li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('login') }}">Log In</a></li>
@@ -52,8 +51,8 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <div class="site-heading">
-                        <h1>Get a GoodFoodMood</h1>
-                        <span class="subheading">Browse and share your favourite recipes</span>
+                        <h1 class="main-font">Get a GoodFoodMood</h1>
+                        <span class="subheading main-font">Browse and share your favourite recipes</span>
                     </div>
                 </div>
             </div>
@@ -92,7 +91,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="small text-center text-muted fst-italic">Copyright &copy; GoodFoodMood <span id="year"></span></div>
+                    <div class="small text-center main-font copyright-text">Copyright &copy; GoodFoodMood <span id="year"></span></div>
                 </div>
             </div>
         </div>
