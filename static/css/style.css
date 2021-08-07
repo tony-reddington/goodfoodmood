@@ -4,14 +4,11 @@
     font-family: 'Montserrat', sans-serif !important;
 }
 
-/* base.html style */
-
-.navbar-brand {
-    display: block;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
+.main-color {
+    background-color: #018D45 !important;
 }
+
+/* base.html style */
 
 @media (max-width: 280px) {
 
@@ -80,7 +77,6 @@
 .card-title {
     height: 3.5rem;
     color: #ffffff;
-    background-color: #018D45;
     font-size: 1rem;
     padding: 1rem 0;
 }
