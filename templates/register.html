@@ -6,20 +6,19 @@
         <div class="mb-4 form-group">
             <i class="fas fa-user form-icon"></i>
             <label for="username" class="form-label main-font">Username</label>
-            <input type="text" name="username" class="form-control" id="username" min-length="5" maxlength="20"
-                pattern="[-a-zA-Z0-9@\._]" required>
+            <input type="text" name="username" class="form-control" id="username" minlength="5" maxlength="20" 
+            pattern="[-a-zA-Z0-9@\._]" title="Username cannot contain spaces and can only include letters/numbers and symbols @\._" required>
         </div>
         <div class="mb-4 form-group">
             <i class="fas fa-lock form-icon"></i>
             <label for="password" class="form-label main-font">Password</label>
-            <input type="password" name="password" class="form-control" id="password" minlength="7" maxlength="20"
-                pattern="[-a-zA-Z0-9@\._]" required>
+            <input type="password" name="password" class="form-control" id="password" minlength="7" maxlength="20" required>
         </div>
         <div class="mb-4 form-group">
             <i class="fas fa-lock form-icon"></i>
             <label for="confirm_password" class="form-label main-font">Confirm Password</label>
             <input type="password" name="confirm_password" class="form-control" id="confirm_password" minlength="7"
-                maxlength="20" pattern="[-a-zA-Z0-9@\._]" required>
+                maxlength="20" required>
         </div>
         <div class="form-button-div">
             <button type="submit"
