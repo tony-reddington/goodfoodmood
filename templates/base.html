@@ -52,10 +52,22 @@
                 <div class="col-md-10 col-lg-8 col-xl-7">
                         {% with notifications = get_flashed_messages(with_categories=true) %}
                             {% if notifications %}
-                                {% for notification in notifications %}
-                                    <div class="alert alert-danger fade show" role="alert">
+                                {% for category, notification in notifications %}
+                                {% if category == "error" %}
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                         {{ notification }}
+                                        <button type="button" class="close" data-bs-dismiss="alert">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
+                                {% else %}
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        {{ notification }}
+                                        <button type="button" class="close" data-bs-dismiss="alert">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                {% endif %}
                                 {% endfor %}
                             {% endif %}
                         {% endwith %}
