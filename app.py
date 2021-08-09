@@ -28,7 +28,7 @@ def index():
 def register():
     """
     Allows user to create and account, checks the if/elif statements
-    and then check's if the user has previously been registered. 
+    and then check's if the user has previously been registered.
     On successful registration, the user is redirected to index.html
     """
     if request.method == "POST":
@@ -37,7 +37,7 @@ def register():
         password = request.form.get("password")
         confirmed_password = request.form.get("confirm_password")
         active_user = user.find_one({"username": username.lower()})
-        
+
         if active_user:
             flash("The selected username already exists", category="error")
             return redirect(url_for("register"))
@@ -64,8 +64,32 @@ def register():
     return render_template("register.html")
 
 
-@app.route("/login")
+@app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Allows user to log into their account. The function checks if the entered
+    username exists and if it does, then checks the stored db password
+    against the password the user entered on the form. If successful the
+    user is then redirected to their profile. If the username or password
+    doesn't match the stored data, the user recieves a flash notification
+    and is redirected to the login page.
+    """
+    if request.method == "POST":
+        user = mongo.db.users
+        current_user = user.find_one(
+            {"username": request.form.get("username").lower()})
+        if current_user:
+            if check_password_hash(
+                    current_user["password"], request.form.get("password")):
+                session["username"] = request.form.get("username").lower()
+                return redirect(url_for("profile"))
+            else:
+                flash("The wrong username/password has been entered")
+                return redirect(url_for("login"))
+        else:
+            flash("The wrong username/password has been entered")
+            return redirect(url_for("login"))
+
     return render_template("login.html")
 
 
