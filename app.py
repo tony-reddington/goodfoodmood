@@ -59,7 +59,7 @@ def register():
 
         session["username"] = request.form.get("username").lower()
         flash("You have been successfully registered", category="success")
-        return redirect(url_for("index"))
+        return redirect(url_for("profile", username=session["username"]))
 
     return render_template("register.html")
 
@@ -82,7 +82,7 @@ def login():
             if check_password_hash(
                     current_user["password"], request.form.get("password")):
                 session["username"] = request.form.get("username").lower()
-                return redirect(url_for("profile"))
+                return redirect(url_for("profile", username=session["username"]))
             else:
                 flash("The wrong username/password has been entered")
                 return redirect(url_for("login"))
@@ -93,9 +93,16 @@ def login():
     return render_template("login.html")
 
 
-@app.route("/profile")
-def profile():
-    return render_template("profile.html")
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    """
+    Allows a user to access their profile page. The profile page accesses
+    the recipes and username variable to display both on the profile page.
+    """
+    user = mongo.db.users
+    recipes = list(mongo.db.recipes.find())
+    username = user.find_one({"username": session["username"]})["username"]
+    return render_template("profile.html", recipes=recipes, username=username)
 
 
 @app.route("/add_recipe")
