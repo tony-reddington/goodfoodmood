@@ -1,4 +1,30 @@
 {% extends "base.html" %}
-{% block content %}
+{% block text_main_image %}
+<div class="site-heading">
+    <h3 class="main-font">Welcome to your profile {{ username }}</h5>
+</div>
+{% endblock %}
 
+{% block content %}
+<!-- Bootstrap card for each Recipe data iteration -->
+<div class="container">
+    <div class="row">
+        {% for users_recipe in recipes %}
+        <div class="card-control col-12 col-md-4" id="profile-card">
+            <div class="card shadow-effect">
+                <h5 class="card-title text-center main-font secondary-color">{{ users_recipe.recipe_name }}</h5>
+                <img src="{{ users_recipe.image_url }}" class="card-img-top" alt="{{ users_recipe.recipe_name }}">
+                <div class="profile-button-container">
+                    <div class="profile-button-div">
+                        <a href="#" class="btn btn-success shadow-effect main-font main-color"><i class="far fa-edit profile-button-icon"></i>Edit</a>
+                    </div>
+                    <div class="profile-button-div">
+                        <a href="#" class="btn btn-danger shadow-effect main-font main-color"><i class="far fa-trash-alt profile-button-icon"></i>Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
