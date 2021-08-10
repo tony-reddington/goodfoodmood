@@ -197,3 +197,44 @@ form {
     color: #000000;
     border: 2px solid #754865 !important;
 }
+
+/* Styling for profile.html */
+
+.profile-button-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 20px 10px;
+}
+
+#profile-card .card {
+    margin: 0;
+}
+
+.profile-button-div .btn {
+    height: 2.5rem;
+    width: 6rem;
+    padding: 10px;
+    margin: auto 0;
+    border-radius: 10px;
+    color: #000000;
+    border-color: #754865;
+}
+
+.profile-button-icon {
+    margin-right: 5px;
+}
+
+@media (max-width: 576px) {
+    #profile-card .card {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #profile-card .card {
+        margin-bottom: 60px;
+    }
+}
