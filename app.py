@@ -112,6 +112,17 @@ def profile(username):
         return redirect(url_for("login"))
 
 
+@app.route("/logout")
+def logout():
+    """
+    Allows user to logout. The session username is
+    removed and the user is redirected back to index.html"
+    """
+    session.pop("username")
+    flash("You have been successfully logged out")
+    return redirect(url_for("index"))
+
+
 @app.route("/add_recipe")
 def add_recipe():
     return render_template("addrecipe.html")
