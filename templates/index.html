@@ -11,7 +11,7 @@
 <div class="container">
     <div class="row">
         {% for recipe in recipes %}
-        <div class="card-control col-12 col-md-4">
+        <div class="card-control col-12 col-md-6 col-lg-4">
             <div class="card shadow-effect">
                 <h5 class="card-title text-center main-font secondary-color">{{ recipe.recipe_name }}</h5>
                 <img src="{{ recipe.image_url }}" class="card-img-top" alt="{{ recipe.recipe_name }}">
