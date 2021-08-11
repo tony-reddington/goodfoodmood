@@ -102,7 +102,14 @@ def profile(username):
     user = mongo.db.users
     recipes = list(mongo.db.recipes.find())
     username = user.find_one({"username": session["username"]})["username"]
-    return render_template("profile.html", recipes=recipes, username=username)
+    """
+    Check if cookies has recorded session and directs the user to their profile
+    page otherwise directs them to the login page.
+    """
+    if session["username"]:
+        return render_template("profile.html", recipes=recipes, username=username)
+    else:
+        return redirect(url_for("login"))
 
 
 @app.route("/add_recipe")
