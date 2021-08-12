@@ -20,15 +20,14 @@
                 </div>
                 <div class="recipe-btn-div">
                     <a href="#" class="btn btn-success shadow-effect main-font main-color" data-mdb-toggle="modal"
-                    data-mdb-target="#exampleModal">Recipe Info</a>
+                    data-mdb-target="#modal{{recipe._id}}">Recipe Info</a>
                 </div>
             </div>
         </div>
+        <!-- Modal box to display recipe info -->
+        {% include 'components/modal.html' %}
         {% endfor %}
     </div>
 </div>
 {% endblock %}
-
-<!-- Modal box to display recipe info -->
-{% include 'components/modal.html' %}
 
