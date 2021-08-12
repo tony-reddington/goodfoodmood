@@ -1,10 +1,10 @@
 <!-- MDB Bootstrap Modal for index.html page recipe info button-->
 {% block modal %}
-<div class="modal fade" id="modal{{recipe._id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade colour" id="modal{{recipe._id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">{{ recipe.recipe_name }}</h4>
+                <h4 class="modal-title main-font modal-header-text" id="exampleModalLabel">{{ recipe.recipe_name }}</h4>
                 <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -12,8 +12,8 @@
                     <img src="{{ recipe.image_url }}" alt="{{ recipe.recipe_name }}">
                 </div>
                 <hr>
-                <div>
-                    <h5>Ingredients</h5>
+                <div class="main-font modal-body-text">
+                    <h5 class="main-font modal-body-text">Ingredients</h5>
                     <ul>
                         <li>{{ recipe.ingredients_1 }}</li>
                         <li>{{ recipe.ingredients_2 }}</li>
@@ -26,8 +26,8 @@
                     </ul>
                 </div>
                 <hr>
-                <div>
-                    <h5>Directions</h5>
+                <div class="main-font modal-body-text">
+                    <h5 class="main-font colour modal-body-text">Directions</h5>
                     <ol>
                         <li> {{ recipe.directions_1 }}</li>
                         <li> {{ recipe.directions_2 }}</li>
@@ -40,7 +40,7 @@
                     </ol>
                 </div>
                 <hr>
-                <div>
+                <div class="main-font modal-body-text">
                     <ul>
                         <li>Prep Time: {{ recipe.prep_time }}</li>
                         <li>Cook Time: {{ recipe.cook_time }}</li>
