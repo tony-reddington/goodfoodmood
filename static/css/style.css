@@ -238,3 +238,15 @@ form {
         margin-bottom: 60px;
     }
 }
+
+/* modal.html styling */
+
+.modal-header-text {
+    font-weight: 700;
+    color: #000000;
+}
+
+.modal-body-text {
+    text-align: left;
+    color: #000000;
+}
