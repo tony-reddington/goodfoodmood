@@ -19,7 +19,8 @@
                     <p class="card-text main-font">{{ recipe.description }}</p>
                 </div>
                 <div class="recipe-btn-div">
-                    <a href="#" class="btn btn-success shadow-effect main-font main-color">Recipe Info</a>
+                    <a href="#" class="btn btn-success shadow-effect main-font main-color" data-mdb-toggle="modal"
+                    data-mdb-target="#exampleModal">Recipe Info</a>
                 </div>
             </div>
         </div>
@@ -27,3 +28,7 @@
     </div>
 </div>
 {% endblock %}
+
+<!-- Modal box to display recipe info -->
+{% include 'components/modal.html' %}
+
