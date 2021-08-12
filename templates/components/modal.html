@@ -1,13 +1,55 @@
-<!-- Modal -->
+<!-- MDB Bootstrap Modal for index.html page recipe info button-->
 {% block modal %}
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade" id="modal{{recipe._id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h4 class="modal-title" id="exampleModalLabel">{{ recipe.recipe_name }}</h4>
                 <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">...</div>
+            <div class="modal-body">
+                <div>
+                    <img src="{{ recipe.image_url }}" alt="{{ recipe.recipe_name }}">
+                </div>
+                <hr>
+                <div>
+                    <h5>Ingredients</h5>
+                    <ul>
+                        <li>{{ recipe.ingredients_1 }}</li>
+                        <li>{{ recipe.ingredients_2 }}</li>
+                        <li>{{ recipe.ingredients_3 }}</li>
+                        <li>{{ recipe.ingredients_4 }}</li>
+                        <li>{{ recipe.ingredients_5 }}</li>
+                        <li>{{ recipe.ingredients_6 }}</li>
+                        <li>{{ recipe.ingredients_7 }}</li>
+                        <li>{{ recipe.ingredients_8 }}</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <h5>Directions</h5>
+                    <ol>
+                        <li> {{ recipe.directions_1 }}</li>
+                        <li> {{ recipe.directions_2 }}</li>
+                        <li> {{ recipe.directions_3 }}</li>
+                        <li> {{ recipe.directions_4 }}</li>
+                        <li> {{ recipe.directions_5 }}</li>
+                        <li> {{ recipe.directions_6 }}</li>
+                        <li> {{ recipe.directions_7 }}</li>
+                        <li> {{ recipe.directions_8 }}</li>
+                    </ol>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li>Prep Time: {{ recipe.prep_time }}</li>
+                        <li>Cook Time: {{ recipe.cook_time }}</li>
+                        <li>Total Time: {{ recipe.total_time }}</li>
+                        <li>Servings: {{ recipe.servings }}</li>
+                        <li>Cooking Temperature: {{ recipe.cooking_temperature }}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
