@@ -12,6 +12,10 @@
     background-color: #754865 !important;
 }
 
+a {
+    color: #754865;
+}
+
 /* base.html style */
 
 @media (max-width: 280px) {
@@ -249,4 +253,21 @@ form {
 .modal-body-text {
     text-align: left;
     color: #000000;
+}
+
+/* addrecipe.html styling */
+
+#add-recipe-heading {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+#recipe-heading-text {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#add-recipe-button {
+    color: #000000;
+    font-weight: 700;
 }
