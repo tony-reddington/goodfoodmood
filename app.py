@@ -123,8 +123,47 @@ def logout():
     return redirect(url_for("index"))
 
 
-@app.route("/add_recipe")
+@app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    """
+    Allows user to add recipes. The recipe variable gets all inputed data from the
+    addrecipe-form and adds to the mongo db recipes database. The user is then
+    redirected back to the home page with a flashed messages and their recipe
+    is displayed.
+    """
+    if request.method == "POST":
+        get_recipe = request.form.get
+        recipe = {
+           "recipe_name": get_recipe("recipe_name"),
+           "image_url": get_recipe("image_url"),
+           "description": get_recipe("description"),
+           "dietary_info": get_recipe("dietary_info"),
+           "ingredients_1": get_recipe("ingredients_1"),
+           "ingredients_2": get_recipe("ingredients_2"),
+           "ingredients_3": get_recipe("ingredients_3"),
+           "ingredients_4": get_recipe("ingredients_4"),
+           "ingredients_5": get_recipe("ingredients_5"),
+           "ingredients_6": get_recipe("ingredients_6"),
+           "ingredients_7": get_recipe("ingredients_7"),
+           "ingredients_8": get_recipe("ingredients_8"),
+           "directions_1": get_recipe("directions_1"),
+           "directions_2": get_recipe("directions_2"),
+           "directions_3": get_recipe("directions_3"),
+           "directions_4": get_recipe("directions_4"),
+           "directions_5": get_recipe("directions_5"),
+           "directions_6": get_recipe("directions_6"),
+           "directions_7": get_recipe("directions_7"),
+           "directions_8": get_recipe("directions_8"),
+           "prep_time": get_recipe("prep_time"),
+           "cook_time": get_recipe("cook_time"),
+           "total_time": get_recipe("total_time"),
+           "servings": get_recipe("servings"),
+           "cooking_temperature": get_recipe("cooking_temperature"),
+           "recipe_by": session["username"]
+        }
+        mongo.db.recipes.insert_one(recipe)
+        flash("Your recipe has been added successfully")
+        return redirect(url_for("index"))
     return render_template("addrecipe.html")
 
 
