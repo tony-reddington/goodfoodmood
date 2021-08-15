@@ -279,7 +279,7 @@ a {
 }
 
 .form-select {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .addrecipe-form-label {
@@ -288,4 +288,14 @@ a {
 
 .add-recipe-modal-header {
     color: #000000;
+}
+
+.recipe-form-subheading {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.addrecipe-form-div {
+    margin-top: 10px;
 }
