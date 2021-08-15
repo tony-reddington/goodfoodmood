@@ -1,0 +1,84 @@
+<!-- MDB Bootstrap Modal for addrecipe.html page and linked to the add recipe button-->
+{% block form_modal %}
+<form class="modal fade colour" id="form-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    method="POST">
+    <div class="modal-dialog modal-dialog-scrollable modal-sm modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title main-font add-recipe-modal-header" id="exampleModalLabel">Add your Recipe</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <label for="recipe_name" class="addrecipe-form-label main-font">Recipe Name</label>
+                    <input type="text" name="recipe_name" class="form-control" id="recipe_name" required>
+                    <label for="image_url" class="addrecipe-form-label main-font">Image website link</label>
+                    <input type="text" name="image_url" class="form-control" id="image_url" required>
+                    <label for="description" class="addrecipe-form-label main-font">Recipe description</label>
+                    <input type="text" name="description" class="form-control" id="description" required>
+                    <hr>
+                    <select class="form-select" name="dietary_info" aria-label="Default select example">
+                        <option selected>Dietary info</option>
+                        <option value="1">Meat</option>
+                        <option value="2">Fish</option>
+                        <option value="3">Vegetarian</option>
+                        <option value="3">Vegan</option>
+                    </select>
+                    <hr>
+                    <label for="ingredients_1" class="addrecipe-form-label main-font">Ingredients 1.</label>
+                    <input type="text" name="ingredients_1" class="form-control" id="ingredients_1" required>
+                    <label for="ingredients_2" class="addrecipe-form-label main-font">Ingredients 2.</label>
+                    <input type="text" name="ingredients_2" class="form-control" id="ingredients_2" required>
+                    <label for="ingredients_3" class="addrecipe-form-label main-font">Ingredients 3.</label>
+                    <input type="text" name="ingredients_3" class="form-control" id="ingredients_3">
+                    <label for="ingredients_4" class="addrecipe-form-label main-font">Ingredients 4.</label>
+                    <input type="text" name="ingredients_4" class="form-control" id="ingredients_4">
+                    <label for="ingredients_5" class="addrecipe-form-label main-font">Ingredients 5.</label>
+                    <input type="text" name="ingredients_5" class="form-control" id="ingredients_5">
+                    <label for="ingredients_6" class="addrecipe-form-label main-font">Ingredients 6.</label>
+                    <input type="text" name="ingredients_6" class="form-control" id="ingredients_6">
+                    <label for="ingredients_7" class="addrecipe-form-label main-font">Ingredients 7.</label>
+                    <input type="text" name="ingredients_7" class="form-control" id="ingredients_7">
+                    <label for="ingredients_8" class="addrecipe-form-label main-font">Ingredients 8.</label>
+                    <input type="text" name="ingredients_8" class="form-control" id="ingredients_8">
+                </div>
+                <hr>
+                <div>
+                    <label for="directions_1" class="addrecipe-form-label main-font">Directions 1.</label>
+                    <input type="text" name="directions_1" class="form-control" id="directions_1" required>
+                    <label for="directions_2" class="addrecipe-form-label main-font">Directions 2.</label>
+                    <input type="text" name="directions_2" class="form-control" id="directions_2" required>
+                    <label for="directions_3" class="addrecipe-form-label main-font">Directions 3.</label>
+                    <input type="text" name="directions_3" class="form-control" id="directions_3">
+                    <label for="directions_4" class="addrecipe-form-label main-font">Directions 4.</label>
+                    <input type="text" name="directions_4" class="form-control" id="directions_4">
+                    <label for="directions_5" class="addrecipe-form-label main-font">Directions 5.</label>
+                    <input type="text" name="directions_5" class="form-control" id="directions_5">
+                    <label for="directions_6" class="addrecipe-form-label main-font">Directions 6.</label>
+                    <input type="text" name="directions_6" class="form-control" id="directions_6">
+                    <label for="directions_7" class="addrecipe-form-label main-font">Directions 7.</label>
+                    <input type="text" name="directions_7" class="form-control" id="directions_7">
+                    <label for="directions_8" class="addrecipe-form-label main-font">Directions 8.</label>
+                    <input type="text" name="directions_8" class="form-control" id="directions_8">
+                    <label for="prep_time" class="addrecipe-form-label main-font">Preparation Time</label>
+                    <input type="text" name="prep_time" class="form-control" id="prep_time">
+                    <label for="cook_time" class="addrecipe-form-label main-font">Cooking Time</label>
+                    <input type="text" name="cook_time" class="form-control" id="cook_time">
+                    <label for="total_time" class="addrecipe-form-label main-font">Total Time</label>
+                    <input type="text" name="total_time" class="form-control" id="total_time">
+                    <label for="servings" class="addrecipe-form-label main-font">Servings</label>
+                    <input type="text" name="servings" class="form-control" id="servings">
+                    <label for="cooking_temperature" class="addrecipe-form-label main-font">Cooking Temperature</label>
+                    <input type="text" name="cooking_temperature" class="form-control" id="cooking_temperature">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
