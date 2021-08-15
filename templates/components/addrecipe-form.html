@@ -1,7 +1,7 @@
 <!-- MDB Bootstrap Modal for addrecipe.html page and linked to the add recipe button-->
 {% block form_modal %}
 <form class="modal fade colour" id="form-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-    method="POST">
+    method="POST" action="{{ url_for('add_recipe') }}">
     <div class="modal-dialog modal-dialog-scrollable modal-sm modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -19,10 +19,10 @@
                     <input type="text" name="description" class="form-control" id="description" required>
                     <select class="form-select" name="dietary_info" aria-label="Default select example">
                         <option selected>Dietary info</option>
-                        <option value="1">Meat</option>
-                        <option value="2">Fish</option>
-                        <option value="3">Vegetarian</option>
-                        <option value="3">Vegan</option>
+                        <option value="meat">Meat</option>
+                        <option value="fish">Fish</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
                     </select>
                 </div>
                 <div class="addrecipe-form-div">
@@ -66,13 +66,13 @@
                 <div class="addrecipe-form-div">
                     <p class="recipe-form-subheading main-font">Cooking/Prep Info</p>
                     <label for="prep_time" class="addrecipe-form-label main-font">Preparation Time</label>
-                    <input type="text" name="prep_time" class="form-control" id="prep_time">
+                    <input type="text" name="prep_time" class="form-control" id="prep_time" required>
                     <label for="cook_time" class="addrecipe-form-label main-font">Cooking Time</label>
                     <input type="text" name="cook_time" class="form-control" id="cook_time">
                     <label for="total_time" class="addrecipe-form-label main-font">Total Time</label>
-                    <input type="text" name="total_time" class="form-control" id="total_time">
+                    <input type="text" name="total_time" class="form-control" id="total_time" required>
                     <label for="servings" class="addrecipe-form-label main-font">Servings</label>
-                    <input type="text" name="servings" class="form-control" id="servings">
+                    <input type="text" name="servings" class="form-control" id="servings" required>
                     <label for="cooking_temperature" class="addrecipe-form-label main-font">Cooking Temperature</label>
                     <input type="text" name="cooking_temperature" class="form-control" id="cooking_temperature">
                 </div>
@@ -81,7 +81,7 @@
                 <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
                     Close
                 </button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="submit" class="btn btn-primary">Add Recipe</button>
             </div>
         </div>
     </div>
