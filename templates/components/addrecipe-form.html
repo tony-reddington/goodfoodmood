@@ -9,14 +9,14 @@
                 <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div>
+                <div class="addrecipe-form-div">
+                    <p class="recipe-form-subheading main-font">Recipe info</p>
                     <label for="recipe_name" class="addrecipe-form-label main-font">Recipe Name</label>
                     <input type="text" name="recipe_name" class="form-control" id="recipe_name" required>
                     <label for="image_url" class="addrecipe-form-label main-font">Image website link</label>
                     <input type="text" name="image_url" class="form-control" id="image_url" required>
                     <label for="description" class="addrecipe-form-label main-font">Recipe description</label>
                     <input type="text" name="description" class="form-control" id="description" required>
-                    <hr>
                     <select class="form-select" name="dietary_info" aria-label="Default select example">
                         <option selected>Dietary info</option>
                         <option value="1">Meat</option>
@@ -24,7 +24,9 @@
                         <option value="3">Vegetarian</option>
                         <option value="3">Vegan</option>
                     </select>
-                    <hr>
+                </div>
+                <div class="addrecipe-form-div">
+                    <p class="recipe-form-subheading main-font">Ingredients</p>
                     <label for="ingredients_1" class="addrecipe-form-label main-font">Ingredients 1.</label>
                     <input type="text" name="ingredients_1" class="form-control" id="ingredients_1" required>
                     <label for="ingredients_2" class="addrecipe-form-label main-font">Ingredients 2.</label>
@@ -42,8 +44,8 @@
                     <label for="ingredients_8" class="addrecipe-form-label main-font">Ingredients 8.</label>
                     <input type="text" name="ingredients_8" class="form-control" id="ingredients_8">
                 </div>
-                <hr>
-                <div>
+                <div class="addrecipe-form-div">
+                    <p class="recipe-form-subheading main-font">Directions</p>
                     <label for="directions_1" class="addrecipe-form-label main-font">Directions 1.</label>
                     <input type="text" name="directions_1" class="form-control" id="directions_1" required>
                     <label for="directions_2" class="addrecipe-form-label main-font">Directions 2.</label>
@@ -60,6 +62,9 @@
                     <input type="text" name="directions_7" class="form-control" id="directions_7">
                     <label for="directions_8" class="addrecipe-form-label main-font">Directions 8.</label>
                     <input type="text" name="directions_8" class="form-control" id="directions_8">
+                </div>
+                <div class="addrecipe-form-div">
+                    <p class="recipe-form-subheading main-font">Cooking/Prep Info</p>
                     <label for="prep_time" class="addrecipe-form-label main-font">Preparation Time</label>
                     <input type="text" name="prep_time" class="form-control" id="prep_time">
                     <label for="cook_time" class="addrecipe-form-label main-font">Cooking Time</label>
