@@ -271,3 +271,21 @@ a {
     color: #000000;
     font-weight: 700;
 }
+
+/* addrecipe-form.html styling */
+
+.addrecipe-form-label {
+    margin-top: 5px;
+}
+
+.form-select {
+    margin-top: 5px;
+}
+
+.addrecipe-form-label {
+    color: #000000;
+}
+
+.add-recipe-modal-header {
+    color: #000000;
+}
