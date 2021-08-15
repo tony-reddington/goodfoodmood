@@ -3,6 +3,9 @@
 {% block text_main_image %}
 <div class="site-heading" id="add-recipe-heading">
     <h3 class="main-font" id="recipe-heading-text">Click here to add your Recipe</h3>
-    <button class="btn btn-success main-color main-font" id="add-recipe-button">Add Recipe</button>
+    <a href="#" class="btn btn-primary main-color main-font" id="add-recipe-button" data-mdb-toggle="modal"
+    data-mdb-target="#form-modal">Add Recipe</a>
 </div>
 {% endblock %}
+
+{% include 'components/addrecipe-form.html' %}
