@@ -155,7 +155,7 @@ a {
 
 /* form style on register.html */
 
-form {
+.register-form {
     background-color: #ffffff;
     border: 1px solid #737b82;
     border-radius: 10px;
