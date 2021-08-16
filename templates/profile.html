@@ -10,6 +10,7 @@
 <div class="container">
     <div class="row">
         {% for users_recipe in recipes %}
+        {% if session.username|lower == users_recipe.recipe_by %}
         <div class="card-control col-12 col-md-4" id="profile-card">
             <div class="card shadow-effect">
                 <h5 class="card-title text-center main-font secondary-color">{{ users_recipe.recipe_name }}</h5>
@@ -26,6 +27,7 @@
                 </div>
             </div>
         </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>
