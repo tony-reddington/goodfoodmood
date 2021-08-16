@@ -167,6 +167,50 @@ def add_recipe():
     return render_template("addrecipe.html")
 
 
+@app.route("/update<recipe_id>", methods=["GET", "POST"])
+def update_recipe(recipe_id):
+    """
+    Allows user to update recipes. The new update variable holds the updated
+    data and updated the database based on the recipes id accessed. Flashes
+    a message that the recipe has been updated and redirects the user back to the home page.
+    """
+    if request.method == "POST":
+        get_recipe = request.form.get
+        new_update = {
+           "recipe_name": get_recipe("recipe_name"),
+           "image_url": get_recipe("image_url"),
+           "description": get_recipe("description"),
+           "dietary_info": get_recipe("dietary_info"),
+           "ingredients_1": get_recipe("ingredients_1"),
+           "ingredients_2": get_recipe("ingredients_2"),
+           "ingredients_3": get_recipe("ingredients_3"),
+           "ingredients_4": get_recipe("ingredients_4"),
+           "ingredients_5": get_recipe("ingredients_5"),
+           "ingredients_6": get_recipe("ingredients_6"),
+           "ingredients_7": get_recipe("ingredients_7"),
+           "ingredients_8": get_recipe("ingredients_8"),
+           "directions_1": get_recipe("directions_1"),
+           "directions_2": get_recipe("directions_2"),
+           "directions_3": get_recipe("directions_3"),
+           "directions_4": get_recipe("directions_4"),
+           "directions_5": get_recipe("directions_5"),
+           "directions_6": get_recipe("directions_6"),
+           "directions_7": get_recipe("directions_7"),
+           "directions_8": get_recipe("directions_8"),
+           "prep_time": get_recipe("prep_time"),
+           "cook_time": get_recipe("cook_time"),
+           "total_time": get_recipe("total_time"),
+           "servings": get_recipe("servings"),
+           "cooking_temperature": get_recipe("cooking_temperature"),
+           "recipe_by": session["username"]
+        }
+        mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, new_update)
+        flash("Your recipe has been updated successfully")
+        return redirect(url_for("index"))
+    recipes = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("profile.html", recipes=recipes)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
