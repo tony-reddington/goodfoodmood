@@ -17,12 +17,17 @@
                     <input type="text" name="image_url" class="form-control" id="image_url" value="{{users_recipe.image_url}}">
                     <label for="description" class="addrecipe-form-label main-font">Recipe description</label>
                     <input type="text" name="description" class="form-control" id="description" value="{{users_recipe.description}}">
-                    <select class="form-select" name="dietary_info" aria-label="Default select example" value="{{users_recipe.dietary_info}}">
+                    <select class="form-select" name="dietary_info" aria-label="Default select example">
                         <option selected>Dietary info</option>
-                        <option value="meat">Meat</option>
-                        <option value="fish">Fish</option>
-                        <option value="vegetarian">Vegetarian</option>
-                        <option value="vegan">Vegan</option>
+                        {% if users_recipe.dietary_info == "meat" %}
+                        <option value="meat" selected>Meat</option>
+                        {% elif users_recipe.dietary_info == "fish" %}
+                        <option value="fish" selected>Fish</option>
+                        {% elif users_recipe.dietary_info == "vegetarian" %}
+                        <option value="vegetarian" selected>Vegetarian</option>
+                        {% elif users_recipe.dietary_info == "vegan" %}
+                        <option value="vegan" selected>Vegan</option>
+                        {% endif %}
                     </select>
                 </div>
                 <div class="addrecipe-form-div">
