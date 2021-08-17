@@ -300,6 +300,13 @@ a {
     margin-top: 10px;
 }
 
+.add-modal-button {
+    font-weight: 700;
+    color: #000000;
+    margin: auto;
+    border: 2px solid #754865;
+}
+
 /* flash alert styling */
 
 .alert-success, .alert-danger {
