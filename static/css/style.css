@@ -299,3 +299,18 @@ a {
 .addrecipe-form-div {
     margin-top: 10px;
 }
+
+/* flash alert styling */
+
+.alert-success, .alert-danger {
+    text-align: center;
+}
+
+.alert-dismissible, .alert {
+    padding: 1rem 0;
+}
+
+.close-alert {
+    padding-left: 3rem;
+    font-size: 1.7rem;
+}
