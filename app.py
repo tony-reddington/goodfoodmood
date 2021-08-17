@@ -211,6 +211,18 @@ def update_recipe(recipe_id):
     return render_template("profile.html", recipes=recipes)
 
 
+@app.route("/delete/<recipe_id>")
+def delete(recipe_id):
+    """
+    Allows user to delete recipes. The selected recipe is captured by it's id
+    and the deleted. The user is then returned to the homepage and flashed a
+    message to let them know the recipe has been successfully deleted"
+    """
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+    flash("The selected Recipe has been successfully deleted")
+    return redirect(url_for("index"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
