@@ -10,7 +10,7 @@
 <div class="container">
     <div class="row">
         {% for users_recipe in recipes %}
-        {% if session.username|lower == users_recipe.recipe_by %}
+        {% if session.username|lower == users_recipe.recipe_by|lower or session.username|lower == "admin"|lower %}
         <div class="card-control col-12 col-md-4" id="profile-card">
             <div class="card shadow-effect">
                 <h5 class="card-title text-center main-font secondary-color">{{ users_recipe.recipe_name }}</h5>
@@ -22,7 +22,7 @@
                         {% include 'components/update-recipe-form.html' %}
                     </div>
                     <div class="profile-button-div">
-                        <a href="#" class="btn btn-danger shadow-effect main-font main-color"><i class="far fa-trash-alt profile-button-icon"></i>Delete</a>
+                        <a href="{{ url_for('delete', recipe_id=users_recipe._id) }}" class="btn btn-danger shadow-effect main-font main-color"><i class="far fa-trash-alt profile-button-icon"></i>Delete</a>
                     </div>
                 </div>
             </div>
