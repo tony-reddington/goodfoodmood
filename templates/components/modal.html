@@ -17,12 +17,24 @@
                     <ul>
                         <li>{{ recipe.ingredients_1 }}</li>
                         <li>{{ recipe.ingredients_2 }}</li>
+                        {% if recipe.ingredients_3 %}
                         <li>{{ recipe.ingredients_3 }}</li>
+                        {% endif %}
+                        {% if recipe.ingredients_4 %}
                         <li>{{ recipe.ingredients_4 }}</li>
+                        {% endif %}
+                        {% if recipe.ingredients_5 %}
                         <li>{{ recipe.ingredients_5 }}</li>
+                        {% endif %}
+                        {% if recipe.ingredients_6 %}
                         <li>{{ recipe.ingredients_6 }}</li>
+                        {% endif %}
+                        {% if recipe.ingredients_7 %}
                         <li>{{ recipe.ingredients_7 }}</li>
+                        {% endif %}
+                        {% if recipe.ingredients_8 %}
                         <li>{{ recipe.ingredients_8 }}</li>
+                        {% endif %}
                     </ul>
                 </div>
                 <hr>
@@ -31,22 +43,38 @@
                     <ol>
                         <li> {{ recipe.directions_1 }}</li>
                         <li> {{ recipe.directions_2 }}</li>
+                        {% if recipe.directions_3 %}
                         <li> {{ recipe.directions_3 }}</li>
+                        {% endif %}
+                        {% if recipe.directions_4 %}
                         <li> {{ recipe.directions_4 }}</li>
+                        {% endif %}
+                        {% if recipe.directions_5 %}
                         <li> {{ recipe.directions_5 }}</li>
+                        {% endif %}
+                        {% if recipe.directions_6 %}
                         <li> {{ recipe.directions_6 }}</li>
+                        {% endif %}
+                        {% if recipe.directions_7 %}
                         <li> {{ recipe.directions_7 }}</li>
+                        {% endif %}
+                        {% if recipe.directions_8 %}
                         <li> {{ recipe.directions_8 }}</li>
+                        {% endif %}
                     </ol>
                 </div>
                 <hr>
                 <div class="main-font modal-body-text">
                     <ul>
                         <li>Prep Time: {{ recipe.prep_time }}</li>
+                        {% if recipe.cook_time %}
                         <li>Cook Time: {{ recipe.cook_time }}</li>
+                        {% endif %}
                         <li>Total Time: {{ recipe.total_time }}</li>
                         <li>Servings: {{ recipe.servings }}</li>
+                        {% if recipe.cooking_temperature %}
                         <li>Cooking Temperature: {{ recipe.cooking_temperature }}</li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
