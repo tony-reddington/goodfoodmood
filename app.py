@@ -223,6 +223,14 @@ def delete(recipe_id):
     return redirect(url_for("index"))
 
 
+@app.errorhandler(404)
+def page_not_available(e):
+    """
+    If a 404 error occurs, the user is directed to a custom 404 page.
+    """
+    return render_template('404.html')
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
