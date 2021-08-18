@@ -231,6 +231,14 @@ def page_not_available(e):
     return render_template('404.html')
 
 
+@app.errorhandler(500)
+def server_error(e):
+    """
+    If a 500 error occurs, the user is directed to a custom 500 page.
+    """
+    return render_template('500.html')
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
