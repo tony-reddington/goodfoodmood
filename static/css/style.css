@@ -336,6 +336,28 @@ a {
     font-size: 1.7rem;
 }
 
+/* Confirm-delete.html modal styling */
+
+#confirm-delete-title {
+    font-weight: 700;
+}
+
+#confirm-delete-body {
+    font-weight: 500;
+    color: #000000;
+}
+
+#confirm-delete-div {
+    justify-content: center;
+    font-weight: 700;
+}
+
+#confirm-delete-button {
+    border: none;
+    background-color: #FF0000;
+    font-weight: 700;
+}
+
 /* Button animation across all pages */
 
 .btn:hover {
