@@ -1,25 +1,30 @@
 {% extends "base.html" %}
+<!-- Register form appearing over the main image -->
 {% block text_main_image %}
 
     <form class="register-form shadow-effect" method="POST">
         <div class="mb-4 form-title main-font secondary-color">REGISTER</div>
         <div class="mb-4 form-group">
             <i class="fas fa-user form-icon"></i>
+            <!-- Username label and input -->
             <label for="username" class="form-label main-font">Username</label>
             <input type="text" name="username" class="form-control" id="username" minlength="5" maxlength="30" pattern="[-a-zA-Z0-9@\._]{5,30}" title="Only include Letters/Numbers and Symbols @\._ and no spaces allowed!" required>
         </div>
         <div class="mb-4 form-group">
             <i class="fas fa-lock form-icon"></i>
+            <!-- Password label and input -->
             <label for="password" class="form-label main-font">Password</label>
             <input type="password" name="password" class="form-control" id="password" minlength="7" maxlength="20" required>
         </div>
         <div class="mb-4 form-group">
             <i class="fas fa-lock form-icon"></i>
+            <!-- Confirm password label and input -->
             <label for="confirm_password" class="form-label main-font">Confirm Password</label>
             <input type="password" name="confirm_password" class="form-control" id="confirm_password" minlength="7"
                 maxlength="20" required>
         </div>
         <div class="form-button-div">
+            <!-- Submit button to check if username/passwords is available and then creates a new user on MongoDB -->
             <button type="submit"
                 class="btn btn-success main-font main-color form-button shadow-effect">REGISTER</button>
         </div>
