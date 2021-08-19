@@ -1,11 +1,12 @@
 {% extends "base.html" %}
-
+<!-- Add recipe page for the user to upload their recipe -->
 {% block text_main_image %}
 <div class="site-heading" id="add-recipe-heading">
     <h3 class="main-font" id="recipe-heading-text">Click here to add your Recipe</h3>
+    <!-- Button linked to the addrecipe-form -->
     <a href="#" class="btn btn-primary main-color main-font" id="add-recipe-button" data-mdb-toggle="modal"
     data-mdb-target="#form-modal">Add Recipe</a>
 </div>
 {% endblock %}
-
+<!-- Add recipe form for the a tag -->
 {% include 'components/addrecipe-form.html' %}
