@@ -1,19 +1,25 @@
-<!-- MDB Bootstrap Modal for index.html page recipe info button-->
+<!-- MDB Bootstrap Modal for index.html page recipe info button containing full recipe-->
 {% block modal %}
 <div class="modal fade colour" id="modal{{recipe._id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <!-- Recipe name-->
                 <h4 class="modal-title main-font modal-header-text" id="exampleModalLabel">{{ recipe.recipe_name }}</h4>
+                <!-- Button to close the full-recipe-modal -->
                 <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+                <!-- Recipe image -->
                 <div>
                     <img src="{{ recipe.image_url }}" alt="{{ recipe.recipe_name }}">
                 </div>
                 <hr>
                 <div class="main-font modal-body-text">
                     <h5 class="main-font modal-body-text">Ingredients</h5>
+                    <!-- Ingredients section. If statement to check if there is a value and if not it will ignore.
+                     Ingredients_1/_2 require an input when adding a recipe so an if statement is not required for
+                     these inputs as there will always be a value -->
                     <ul>
                         <li>{{ recipe.ingredients_1 }}</li>
                         <li>{{ recipe.ingredients_2 }}</li>
@@ -40,6 +46,9 @@
                 <hr>
                 <div class="main-font modal-body-text">
                     <h5 class="main-font colour modal-body-text">Directions</h5>
+                    <!-- Directions section. If statement to check if there is a value and if not it will ignore.
+                     directions_1/_2 require an input when adding a recipe so an if statement is not required for
+                     these inputs as there will always be a value -->
                     <ol>
                         <li> {{ recipe.directions_1 }}</li>
                         <li> {{ recipe.directions_2 }}</li>
@@ -65,6 +74,9 @@
                 </div>
                 <hr>
                 <div class="main-font modal-body-text">
+                    <!-- Additional recipe section. If statement to check if there is a value and if not it will ignore.
+                     Some require an input when adding a recipe so an if statement is not required for
+                     these inputs as there will always be a value -->
                     <ul>
                         <li>Prep Time: {{ recipe.prep_time }}</li>
                         {% if recipe.cook_time %}
