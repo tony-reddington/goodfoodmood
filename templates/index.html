@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+<!-- Text appearing over the main image -->
 {% block text_main_image %}
 <div class="site-heading">
     <h1 class="main-font">Get a GoodFoodMood</h1>
@@ -19,6 +20,7 @@
                     <p class="card-text main-font">{{ recipe.description }}</p>
                 </div>
                 <div class="recipe-btn-div">
+                    <!-- Button to activate the full-recipe-modal -->
                     <a href="#" class="btn btn-success shadow-effect main-font main-color" data-mdb-toggle="modal"
                     data-mdb-target="#modal{{recipe._id}}">Recipe Info</a>
                     <!-- Modal box to display recipe info -->
