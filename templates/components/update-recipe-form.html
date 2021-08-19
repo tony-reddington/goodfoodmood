@@ -5,12 +5,16 @@
     <div class="modal-dialog modal-dialog-scrollable modal-sm modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <!-- Form title -->
                 <h5 class="modal-title main-font add-recipe-modal-header" id="exampleModalLabel">Update your Recipe</h5>
+                <!-- Button to close update-recipe-form.html -->
                 <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="addrecipe-form-div">
+                    <!-- Sub-section title -->
                     <p class="recipe-form-subheading main-font">Recipe info</p>
+                    <!-- Recipe information extracted from MongoDB -->
                     <label for="recipe_name" class="addrecipe-form-label main-font">Recipe Name</label>
                     <input type="text" name="recipe_name" class="form-control" id="recipe_name" value="{{users_recipe.recipe_name}}">
                     <label for="image_url" class="addrecipe-form-label main-font">Image website link</label>
@@ -19,6 +23,7 @@
                     <input type="text" name="description" class="form-control" id="description" value="{{users_recipe.description}}">
                     <select class="form-select" name="dietary_info" aria-label="Default select example">
                         <option>Dietary info</option>
+                        <!-- If statement adding selected to the option depending on what value is extracted from MongoDB -->
                         <option value="meat" {% if users_recipe.dietary_info == "meat" %} selected="selected"{% endif %}>Meat</option>
                         <option value="fish" {% if users_recipe.dietary_info == "fish" %} selected="selected"{% endif %}>Fish</option>
                         <option value="vegetarian" {% if users_recipe.dietary_info == "vegetarian" %} selected="selected"{% endif %}>Vegetarian</option>
@@ -78,6 +83,7 @@
                 </div>
             </div>
             <div class="modal-footer">
+                <!-- Button submitting the update to MongoDB -->
                 <button type="submit" class="btn main-font main-color shadow-effect" id="update-modal-button">Update Recipe</button>
             </div>
         </div>
