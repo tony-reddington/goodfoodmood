@@ -45,10 +45,12 @@ def register():
             flash("The selected username already exists", category="error")
             return redirect(url_for("register"))
         elif len(username) < 5:
-            flash("Username must be more than 5 x characters long", category="error")
+            flash("Username must be more than 5 x characters long",
+                  category="error")
             return redirect(url_for("register"))
         elif len(password) < 5:
-            flash("Password must be more than 7 x characters long", category="error")
+            flash("Password must be more than 7 x characters long",
+                  category="error")
             return redirect(url_for("register"))
         elif password != confirmed_password:
             flash("The passwords entered do not match", category="error")
@@ -83,9 +85,11 @@ def login():
             {"username": request.form.get("username").lower()})
         if current_user:
             if check_password_hash(
-                    current_user["password"], request.form.get("password")):
+                    current_user["password"],
+                    request.form.get("password")):
                 session["username"] = request.form.get("username").lower()
-                return redirect(url_for("profile", username=session["username"]))
+                return redirect(url_for("profile",
+                                username=session["username"]))
             else:
                 flash("The wrong username/password has been entered")
                 return redirect(url_for("login"))
@@ -110,7 +114,8 @@ def profile(username):
     page otherwise directs them to the login page.
     """
     if session["username"]:
-        return render_template("profile.html", recipes=recipes, username=username)
+        return render_template("profile.html", recipes=recipes,
+                               username=username)
     else:
         return redirect(url_for("login"))
 
@@ -129,10 +134,10 @@ def logout():
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     """
-    Allows user to add recipes. The recipe variable gets all inputed data from the
-    addrecipe-form and adds to the mongo db recipes database. The user is then
-    redirected back to the home page with a flashed messages and their recipe
-    is displayed.
+    Allows user to add recipes. The recipe variable gets all inputed data from
+    the addrecipe-form and adds to the mongo db recipes database. The user is
+    then redirected back to the home page with a flashed messages and their
+    recipe is displayed.
     """
     if request.method == "POST":
         get_recipe = request.form.get
@@ -175,7 +180,8 @@ def update_recipe(recipe_id):
     """
     Allows user to update recipes. The new update variable holds the updated
     data and updated the database based on the recipes id accessed. Flashes
-    a message that the recipe has been updated and redirects the user back to the home page.
+    a message that the recipe has been updated and redirects the user back
+    to the home page.
     """
     if request.method == "POST":
         get_recipe = request.form.get
