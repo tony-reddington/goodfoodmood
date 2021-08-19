@@ -335,3 +335,16 @@ a {
     padding-left: 3rem;
     font-size: 1.7rem;
 }
+
+/* Button animation across all pages */
+
+.btn:hover {
+    background-color: #ffffff !important;
+    box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.24);
+}
+
+.btn:active {
+    background-color: #754865 !important;
+    color: #ffffff;
+    box-shadow: none;
+}
