@@ -27,8 +27,10 @@
                         {% include 'components/update-recipe-form.html' %}
                     </div>
                     <div class="profile-button-div">
-                        <!-- Button for users to delete recipes they created -->
-                        <a href="{{ url_for('delete', recipe_id=users_recipe._id) }}" class="btn btn-danger shadow-effect main-font main-color"><i class="far fa-trash-alt profile-button-icon"></i>Delete</a>
+                        <!-- Button for users to delete recipes they created with linked modal to confirm they want to delete-->
+                        <a href="#" class="btn btn-danger shadow-effect main-font main-color" data-mdb-toggle="modal"
+                        data-mdb-target="#confirm-delete"><i class="far fa-trash-alt profile-button-icon"></i>Delete</a>
+                        {% include 'components/confirm-delete.html' %}
                     </div>
                 </div>
             </div>
