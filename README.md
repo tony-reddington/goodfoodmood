@@ -184,3 +184,12 @@
  * The website was tested on Chrome, Safari and Firefox with no issues found.
  * Google Dev tools were used in the creation of the website and to ensure each page was responsive across all device screen sizes.
  * Google dev lighthouse was used to test the performance/ accessibility/ best practice and SEO and all return a high score.
+
+### Issues
+ * The Start Bootstrap template imported was causing styling issues.
+    - The only solution i had was to use "!important" within CSS to rectify.
+ * The first modal created wouldn't link correctly and open the correct recipe information.
+    - The solution was to create and dynamic id to only show the selected recipe.
+
+### Unresolved Issues
+  * The social media icons on hover won't change color on hover. I believe this is because of some imported style.
