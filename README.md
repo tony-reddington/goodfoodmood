@@ -21,19 +21,19 @@
 
 #### As a user, I want - 
 * the navigation bar clearly visible so I can easily navigate the website.
+* a page displaying all uploaded recipes.
 * the website responsive across devices so I can swap and change devices as I wish.
 * the page laid out neatly so that I can find information effortlessly.
-* to create an account that will be home to all the recipes and allow me to create, replace, update and delete recipes that i have uploaded to the website.
-* functionality to search recipes by category
+* to create a profile that will be home to all my recipes and allow me to create then replace, update and delete recipes that i have uploaded to the website.
 
 ### Site owner goals
 
 #### As the site owner, I want - 
 * to provide a simple navigation display making it easy for users to navigate through the website.
+* to display all recipes on the home page.
 * to provide responsiveness across all device screen sizes.
-* to layout all recipe information as clearly as possibly so users can find everything with ease.
-* to allow users to create accounts giving then access to create or replace, update and delete recipes they have previously added.
-* to provide a search field to search for recipes by category
+* to lay out all recipe information as clearly as possibly so users can find everything with ease.
+* to allow users to create profiles, giving them access to create, replace, update and delete recipes.
 
 ### Design
 
@@ -61,17 +61,30 @@
 * [Add Recipe wireframe](#)
 
 ### Existing Features
- * 
+ * The website is made up of 5 x pages. 2 of which are only visible to a user when they create a profile.
  * #### Home page
-   * 
+   * The Home page is made up of a brand logo and navigation bar along the top of the page. The navbar scrolls with the user to help them keep on track. The navigation bar changes to a hamburger button on smaller screens.
+   * A background image appears below the navbar with a welcome message overlay in the centre.
+   * Recipes are retrieved from MongoDB and displayed in a card view showing the user an overview of the recipe name, image and description. A button can then be clicked to view the full recipe.
+   * Social media icons for Twitter, Facebook and Instagram appear in the footer.
  * #### Login page
-   * 
+   * A form is displayed over the main background image with inputs for a user to enter their username and password.
+   * A button then checks that the username and password exists within the MongoDB database and returns a flash message.
+   * Once successful the user will have access to their profile page and an the Add Recipe button.
  * #### Register page
-   * 
+   * A form is displayed over the main background image with inputs for a user to enter their username,password and a field to verify their entered password.
+   * A button then adds the username and password to the MongoDB database if successful and returns a flash message above the form.
+   * The user will then have access to their profile page and an the Add Recipe button.
  * #### Profile page
-   * 
+   * A welcome "username" message appears over the main background image.
+   * The users uploaded recipes are retrieved from MongoDB and displayed in cards.
+   * The cards house 2 x buttons for editing and deleting the users recipes and both activate modal pop ups.
+   * The editing modal display's a form showing all the data the user previously input allowing them to make edits or additions where requiredwith a button along the bottom to submit the changes to MongoDB.
+   * The delete modal displays a warning to users to confirm that their intention is to delete with a button on the bottom which deletes the recipe from MongoDB.
  * #### Add Recipe page
-   * 
+   * The add recipe page contains an user instruction and button to activate a form modal.
+   * The add recipe form modal displays provides a user with labels and fields to enter their recipe. The add recipe button at eh end of the form submits the recipe to MongoDB that will in tirn be displayed on the homepage and on their profile.
+
 ### Features for future implimentation
  * 
 ## Technology Used
