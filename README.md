@@ -3,9 +3,9 @@
 # GoodFoodMood
 ![responsive website](static/images/responsive-image.JPG)
 
-## The goal of this website is to share cooking recipes that will be populated by both the owner and registered users that appear on tiles on the main page. Each user has their own profile page where they can store, edit or delete their uploaded recipes.
+## The goal of this website is to share cooking recipes that will be populated by both the owner and registered users that appear on cards on the main page. Each user has their own profile page where they can store, edit or delete their uploaded recipes.
 
-### Table of contents
+### Table of content
 
 - [User Experience UX](#user-experience-ux)
   - [User Stories](#user-stories)
