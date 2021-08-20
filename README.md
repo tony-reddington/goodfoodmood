@@ -5,6 +5,37 @@
 
 ## The goal of this website is to share cooking recipes that will be populated by both the owner and registered users that appear on tiles on the main page. Each user has their own profile page where they can store, edit or delete their uploaded recipes.
 
+### Table of contents
+
+- [User Experience UX](#user-experience-ux)
+  - [User Stories](#user-stories)
+  - [Site owner goals](#site-owner-goals)
+- [Design](#design)
+  - [Colour Scheme](#colour-scheme)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
+  - [Wireframes](#wireframes)
+- [Existing Features](#existing-features)
+- [Features for future implimentation](#features-for-future-implimentation)
+- [Information Architecture](#information-architecture)
+- [Admin Credentials](#admin-credentials)
+- [Technology Used](#technology-used)
+- [Languages used](#languages-used)
+- [Frameworks/Libraries and Programs used](#frameworkslibraries-and-programs-used)
+- [Testing](#testing)
+- [Testing user Stories Testing](#testing-user-stories-testing)
+- [Further Testing](#further-testing)
+- [Issues](#issues)
+- [Unresolved Issues](#unresolved-issues)
+- [Deployment](#deployment)
+    - [Instructions](#instructions)
+    - [Heroku Deployment](#heroku-deployment)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Content](#content)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
+
 ### User Experience (UX)
 
 #### The user goals will be to:
