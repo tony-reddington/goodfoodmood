@@ -179,3 +179,8 @@
     * The website is easily navigated.
 5. to allow users to create profiles, giving them access to create, update and delete recipes.
     * Users are able to create,update and delete recipes once they're registered.
+
+### Further Testing
+ * The website was tested on Chrome, Safari and Firefox with no issues found.
+ * Google Dev tools were used in the creation of the website and to ensure each page was responsive across all device screen sizes.
+ * Google dev lighthouse was used to test the performance/ accessibility/ best practice and SEO and all return a high score.
