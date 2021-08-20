@@ -139,7 +139,7 @@
 * [JSHint](https://jshint.com/) - Javascript test validated and passed
 * [PEP8](http://pep8online.com/) - Python test validated and passed
 
--   #### User Stories
+### Testing user Stories
 -   #### User Goals
 1. Easily navigate through the website
     * The navigation bar at the top of the screen is responsive and is clearly laid out for the user.
@@ -153,3 +153,29 @@
     * The user can update/edit their uploaded recipes from their profile page.
 6. Delete created recipes
     * The user can delete their uploaded recipes from their profile page.
+
+-   #### User Stories
+    ##### As a user, I want - 
+1. the navigation bar clearly visible so I can easily navigate the website.
+    * The navbar is clearly visible at the top of each screen
+2. a page displaying all uploaded recipes.
+    * The Homepage displays all uploaded recipes from all users.
+3. the website responsive across devices so I can swap and change devices as I wish.
+    * The website is responsive across all device screen sizes.
+4. the page laid out neatly so that I can find information effortlessly.
+    * Everything on the website is clearly labelled making it easy for users to navigate.
+5. to create a profile that will be home to all my recipes and allow me to create then replace, update and delete recipes that i have uploaded to the website.
+    * Each user profile page gives the user access to their uploaded recipes with option to edit/delete their existing uploaded recipes and an add recipe button on the navbar allowing them to upload recipes.
+
+-   #### Site Owner Goals
+    ##### As the site owner, I want - 
+1. to provide a simple navigation display making it easy for users to navigate through the website.
+    * Navigation throughout the website is simple and straight forward.
+2. to display all recipes on the home page.
+    * All recipes displayed on the home page.
+3. to provide responsiveness across all device screen sizes.
+    * Website responsive on all devices.
+4. to lay out all recipe information as clearly as possibly so users can find everything with ease.
+    * The website is easily navigated.
+5. to allow users to create profiles, giving them access to create, update and delete recipes.
+    * Users are able to create,update and delete recipes once they're registered.
