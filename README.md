@@ -96,6 +96,10 @@
 ## recipes data
 ![users data](static/images/recipes-data.JPG)
 
+# Admin Credentials
+ * Username - admin
+ * Password - admin1234
+
 ## Technology Used
 
 ### Languages used
@@ -147,7 +151,7 @@
 * [JSHint](https://jshint.com/) - Javascript test validated and passed
 * [PEP8](http://pep8online.com/) - Python test validated and passed
 
-### Testing user Stories
+### Testing user Stories Testing
 -   #### User Goals
 1. Easily navigate through the website
     * The navigation bar at the top of the screen is responsive and is clearly laid out for the user.
@@ -162,7 +166,7 @@
 6. Delete created recipes
     * The user can delete their uploaded recipes from their profile page.
 
--   #### User Stories
+-   #### User Stories Testing
     ##### As a user, I want - 
 1. the navigation bar clearly visible so I can easily navigate the website.
     * The navbar is clearly visible at the top of each screen
@@ -175,7 +179,7 @@
 5. to create a profile that will be home to all my recipes and allow me to create then replace, update and delete recipes that i have uploaded to the website.
     * Each user profile page gives the user access to their uploaded recipes with option to edit/delete their existing uploaded recipes and an add recipe button on the navbar allowing them to upload recipes.
 
--   #### Site Owner Goals
+-   #### Site Owner Goals Testing
     ##### As the site owner, I want - 
 1. to provide a simple navigation display making it easy for users to navigate through the website.
     * Navigation throughout the website is simple and straight forward.
