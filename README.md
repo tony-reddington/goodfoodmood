@@ -204,7 +204,7 @@
 
 ## Deployment
 
-I fyou want to run this project locally within your own IDE please follow the instructions below:
+If you want to run this project locally within your own IDE please follow the instructions below:
 
 The below must be installed:
 
@@ -261,3 +261,24 @@ Pip install -r requirements.txt.
 ```
 python app.py
 ```
+
+## Heroku Deployment
+
+To deploy your website to Heroku, you should follow the instructions set out below:
+
+1. Create a requirements.txt file with the command line:
+```
+pip3 freeze –local > requirements.txt
+```
+2. You now need to create a Procfile by typing the command line:
+```
+echo web: python app.py > Procfile
+```
+3. One the Procfile has been created you access the file and delete the empty line at the bottom and save the file to avoid any issues.
+3. Proceed to the [Heroku](https://id.heroku.com/login) website where you should log in and click "New" then "Create new app" and then proceed to selecting the closest region to you.
+4. Proceed to the "Deploy" at the top, then to "Deploy method". Once found,  select the github button. Link to GitHub by entering your website repo name and clicking search and connect.
+5. Click "Setting" on the top navbar and scroll to "Config Vars" then click the "Reveal Config Vars" button.
+6. Copy the key and value pairs from your IDE env file and enter into the fields provided and click "Add".
+7. Proceed back to your terminal and add and commit the requirements.txt file and push to GitHub.
+8. Once these steps are completed, go back to Heroku and click "Deploy" and scroll down to "Automatic deploys" then proceed and click "Enable Automatic Deploys"
+9. You should then recieve a message stating that your app has been succesfully deployed.
