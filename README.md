@@ -12,10 +12,8 @@
 * Ability to access the website using multiple devices
 * Create an account to store created recipes
 * Create recipes
-* Replace recipes
 * Update recipes
 * Delete created recipes
-* Search for recipes
 
 ### User Stories
 
@@ -140,3 +138,18 @@
 * [W3C Markup validator](https://validator.w3.org/) - HTML test validated and passed
 * [JSHint](https://jshint.com/) - Javascript test validated and passed
 * [PEP8](http://pep8online.com/) - Python test validated and passed
+
+-   #### User Stories
+-   #### User Goals
+1. Easily navigate through the website
+    * The navigation bar at the top of the screen is responsive and is clearly laid out for the user.
+2. Ability to access the website using multiple devices
+    * The website is responsive across all screen sizes.
+3. Create an account to store created recipes
+    * The profile page allows the user to view all their uploaded recipes.
+4. Create recipes
+    * Once registered the user has access via the navbar to add a recipe.
+5. Update recipes
+    * The user can update/edit their uploaded recipes from their profile page.
+6. Delete created recipes
+    * The user can delete their uploaded recipes from their profile page.
