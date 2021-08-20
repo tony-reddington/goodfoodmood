@@ -98,11 +98,39 @@
 * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 * [Python](https://www.python.org/)
 
-### Tools used
-* MongoDB
-* Flask
-* Werkzeug
-* PIP
-* jQuery
-* Bootstrap
+### Frameworks/Libraries and Programs used
+1.  [Balsamiq](https://balsamiq.com/)
+    - Balsamic was used to build wireframes for the website pages.
+2.  [Font Awesome](https://fontawesome.com/)
+    - Font awesome was used for the social media icons in the footer and the icons on the login/registration forms.
+3.  [Google fonts](https://fonts.google.com/)
+    - The Monserrat font that i used across the website was taken from Google fonts.
+4.  [Istockphoto](https://www.istockphoto.com/)
+    - Istockphoto was used for all the main background website image.
+5.  [TinyJPG](https://tinyjpg.com/)
+    - Tinyjpg was used to reduce the size of all the background image.
+6.  [Befunky photo editor](https://www.befunky.com/)
+    - Befunky photo editor was used to resize images.
+7.  [Bootstrap](https://getbootstrap.com/)
+    - Bootstrap was used for the recipe cards and to make the website more responsive in certain areas.
+8.  [Coolers](https://coolors.co/)
+    - Coolers was used to help generate a colour palette for the entire site.
+9.  [MongoDB](https://www.mongodb.com/)
+    - MongoDB holds the Recipes database that holds the recipe data and user credentials.
+10. [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+    - Flask framework was used to build the website. 
+11. [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/utils/#module-werkzeug.security)
+    - Werkzeug was user to generate hashed passwords.
+12. [Favicon](https://favicon.io/)
+    - Favicon.io was used to create the website favicon.
+13. [MDB Bootstrap](https://mdbootstrap.com/docs/standard/)
+    - MDB bootstrap was used to create the modals.
+14. [Start Bootstrap](https://startbootstrap.com/)
+    - Start Bootstrap was used to create the structure of the website using the Clean Blog theme.
+15. [Web Formatter](https://webformatter.com/)
+    - Web Formatter was used to format the CSS stylesheet and all HTML pages to make the code easier to read.
+16. [Gitpod](https://gitpod.io/)
+    - Gitpod was used to write the website code.
+17. [GitHub](https://github.com/)
+    - GitHub was used to host the code and website contents.
 
