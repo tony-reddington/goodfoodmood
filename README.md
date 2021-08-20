@@ -86,7 +86,10 @@
    * The add recipe form modal displays provides a user with labels and fields to enter their recipe. The add recipe button at eh end of the form submits the recipe to MongoDB that will in tirn be displayed on the homepage and on their profile.
 
 ### Features for future implimentation
- * 
+ * Different sections for meal types
+ * Search function
+ * Remove imported css to improve page loading speed.
+ * A more dynamic relational database to avoid so many if statements for inputs. 
 ## Technology Used
 
 ### Languages used
