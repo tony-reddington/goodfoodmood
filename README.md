@@ -1,7 +1,7 @@
-[View Discover GoodFoodMood website here]()
+[View GoodFoodMood website here](https://good-food-mood.herokuapp.com/)
 
 # GoodFoodMood
-![responsive website]()
+![responsive website](static/images/responsive-image.JPG)
 
 ## The goal of this website is to share cooking recipes that will be populated by both the owner and registered users that appear on tiles on the main page. 
 
