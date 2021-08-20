@@ -79,15 +79,17 @@
 
 #### Wireframes
 
-* [Home wireframe](#)
+* [Home wireframe](static/wireframes/home.pdf)
 
-* [Login wireframe](#)
+* [Login wireframe](static/wireframes/log-in.pdf)
 
-* [Register wireframe](#)
+* [Register wireframe](static/wireframes/register.pdf)
 
-* [Profile wireframe](#)
+* [Profile wireframe](static/wireframes/profile.pdf)
 
-* [Add Recipe wireframe](#)
+* [Add Recipe wireframe](static/wireframes/add-recipe.pdf)
+
+* [Edit Recipe wireframe](static/wireframes/edit-recipe.pdf)
 
 ### Existing Features
  * The website is made up of 5 x pages. 2 of which are only visible to a user when they create a profile.
