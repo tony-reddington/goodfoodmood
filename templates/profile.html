@@ -22,14 +22,17 @@
                 <div class="profile-button-container">
                     <div class="profile-button-div">
                         <!-- Button for users to update/edit their recipes linked to update-recipe-form.html -->
-                        <a href="{{ url_for('update_recipe', recipe_id=users_recipe._id) }}" class="btn btn-success shadow-effect main-font main-color" data-mdb-toggle="modal"
-                        data-mdb-target="#modal{{users_recipe._id}}"><i class="far fa-edit profile-button-icon"></i>Edit</a>
+                        <a href="{{ url_for('update_recipe', recipe_id=users_recipe._id) }}"
+                            class="btn btn-success shadow-effect main-font main-color" data-mdb-toggle="modal"
+                            data-mdb-target="#modal{{users_recipe._id}}"><i
+                                class="far fa-edit profile-button-icon"></i>Edit</a>
                         {% include 'components/update-recipe-form.html' %}
                     </div>
                     <div class="profile-button-div">
                         <!-- Button for users to delete recipes they created with linked modal to confirm they want to delete-->
                         <a href="#" class="btn btn-danger shadow-effect main-font main-color" data-mdb-toggle="modal"
-                        data-mdb-target="#confirm-delete"><i class="far fa-trash-alt profile-button-icon"></i>Delete</a>
+                            data-mdb-target="#confirm-delete"><i
+                                class="far fa-trash-alt profile-button-icon"></i>Delete</a>
                         {% include 'components/confirm-delete.html' %}
                     </div>
                 </div>

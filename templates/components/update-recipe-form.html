@@ -1,7 +1,7 @@
 <!-- MDB Bootstrap Modal for addrecipe.html page and linked to the add recipe button-->
 {% block update_form_modal %}
-<form class="modal fade colour" id="modal{{users_recipe._id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-    method="POST" action="{{ url_for('update_recipe', recipe_id=users_recipe._id) }}">
+<form class="modal fade colour" id="modal{{users_recipe._id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" method="POST" action="{{ url_for('update_recipe', recipe_id=users_recipe._id) }}">
     <div class="modal-dialog modal-dialog-scrollable modal-sm modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -16,75 +16,104 @@
                     <p class="recipe-form-subheading main-font">Recipe info</p>
                     <!-- Recipe information extracted from MongoDB -->
                     <label for="recipe_name" class="addrecipe-form-label main-font">Recipe Name</label>
-                    <input type="text" name="recipe_name" class="form-control" id="recipe_name" value="{{users_recipe.recipe_name}}">
+                    <input type="text" name="recipe_name" class="form-control" id="recipe_name"
+                        value="{{users_recipe.recipe_name}}">
                     <label for="image_url" class="addrecipe-form-label main-font">Image website link</label>
-                    <input type="text" name="image_url" class="form-control" id="image_url" value="{{users_recipe.image_url}}">
+                    <input type="text" name="image_url" class="form-control" id="image_url"
+                        value="{{users_recipe.image_url}}">
                     <label for="description" class="addrecipe-form-label main-font">Recipe description</label>
-                    <input type="text" name="description" class="form-control" id="description" value="{{users_recipe.description}}">
+                    <input type="text" name="description" class="form-control" id="description"
+                        value="{{users_recipe.description}}">
                     <select class="form-select" name="dietary_info" aria-label="Default select example">
                         <option>Dietary info</option>
                         <!-- If statement adding selected to the option depending on what value is extracted from MongoDB -->
-                        <option value="meat" {% if users_recipe.dietary_info == "meat" %} selected="selected"{% endif %}>Meat</option>
-                        <option value="fish" {% if users_recipe.dietary_info == "fish" %} selected="selected"{% endif %}>Fish</option>
-                        <option value="vegetarian" {% if users_recipe.dietary_info == "vegetarian" %} selected="selected"{% endif %}>Vegetarian</option>
-                        <option value="vegan" {% if users_recipe.dietary_info == "vegan" %} selected="selected"{% endif %}>Vegan</option>
+                        <option value="meat" {% if users_recipe.dietary_info == "meat" %} selected="selected"
+                            {% endif %}>Meat</option>
+                        <option value="fish" {% if users_recipe.dietary_info == "fish" %} selected="selected"
+                            {% endif %}>Fish</option>
+                        <option value="vegetarian" {% if users_recipe.dietary_info == "vegetarian" %}
+                            selected="selected" {% endif %}>Vegetarian</option>
+                        <option value="vegan" {% if users_recipe.dietary_info == "vegan" %} selected="selected"
+                            {% endif %}>Vegan</option>
                     </select>
                 </div>
                 <div class="addrecipe-form-div">
                     <p class="recipe-form-subheading main-font">Ingredients</p>
                     <label for="ingredients_1" class="addrecipe-form-label main-font">Ingredients 1.</label>
-                    <input type="text" name="ingredients_1" class="form-control" id="ingredients_1" value="{{users_recipe.ingredients_1}}">
+                    <input type="text" name="ingredients_1" class="form-control" id="ingredients_1"
+                        value="{{users_recipe.ingredients_1}}">
                     <label for="ingredients_2" class="addrecipe-form-label main-font">Ingredients 2.</label>
-                    <input type="text" name="ingredients_2" class="form-control" id="ingredients_2" value="{{users_recipe.ingredients_2}}">
+                    <input type="text" name="ingredients_2" class="form-control" id="ingredients_2"
+                        value="{{users_recipe.ingredients_2}}">
                     <label for="ingredients_3" class="addrecipe-form-label main-font">Ingredients 3.</label>
-                    <input type="text" name="ingredients_3" class="form-control" id="ingredients_3" value="{{users_recipe.ingredients_3}}" >
+                    <input type="text" name="ingredients_3" class="form-control" id="ingredients_3"
+                        value="{{users_recipe.ingredients_3}}">
                     <label for="ingredients_4" class="addrecipe-form-label main-font">Ingredients 4.</label>
-                    <input type="text" name="ingredients_4" class="form-control" id="ingredients_4" value="{{users_recipe.ingredients_4}}" >
+                    <input type="text" name="ingredients_4" class="form-control" id="ingredients_4"
+                        value="{{users_recipe.ingredients_4}}">
                     <label for="ingredients_5" class="addrecipe-form-label main-font">Ingredients 5.</label>
-                    <input type="text" name="ingredients_5" class="form-control" id="ingredients_5" value="{{users_recipe.ingredients_5}}" >
+                    <input type="text" name="ingredients_5" class="form-control" id="ingredients_5"
+                        value="{{users_recipe.ingredients_5}}">
                     <label for="ingredients_6" class="addrecipe-form-label main-font">Ingredients 6.</label>
-                    <input type="text" name="ingredients_6" class="form-control" id="ingredients_6" value="{{users_recipe.ingredients_6}}" >
+                    <input type="text" name="ingredients_6" class="form-control" id="ingredients_6"
+                        value="{{users_recipe.ingredients_6}}">
                     <label for="ingredients_7" class="addrecipe-form-label main-font">Ingredients 7.</label>
-                    <input type="text" name="ingredients_7" class="form-control" id="ingredients_7" value="{{users_recipe.ingredients_7}}" >
+                    <input type="text" name="ingredients_7" class="form-control" id="ingredients_7"
+                        value="{{users_recipe.ingredients_7}}">
                     <label for="ingredients_8" class="addrecipe-form-label main-font">Ingredients 8.</label>
-                    <input type="text" name="ingredients_8" class="form-control" id="ingredients_8" value="{{users_recipe.ingredients_8}}" >
+                    <input type="text" name="ingredients_8" class="form-control" id="ingredients_8"
+                        value="{{users_recipe.ingredients_8}}">
                 </div>
                 <div class="addrecipe-form-div">
                     <p class="recipe-form-subheading main-font">Directions</p>
                     <label for="directions_1" class="addrecipe-form-label main-font">Directions 1.</label>
-                    <input type="text" name="directions_1" class="form-control" id="directions_1" value="{{users_recipe.directions_1}}">
+                    <input type="text" name="directions_1" class="form-control" id="directions_1"
+                        value="{{users_recipe.directions_1}}">
                     <label for="directions_2" class="addrecipe-form-label main-font">Directions 2.</label>
-                    <input type="text" name="directions_2" class="form-control" id="directions_2" value="{{users_recipe.directions_2}}">
+                    <input type="text" name="directions_2" class="form-control" id="directions_2"
+                        value="{{users_recipe.directions_2}}">
                     <label for="directions_3" class="addrecipe-form-label main-font">Directions 3.</label>
-                    <input type="text" name="directions_3" class="form-control" id="directions_3" value="{{users_recipe.directions_3}}" >
+                    <input type="text" name="directions_3" class="form-control" id="directions_3"
+                        value="{{users_recipe.directions_3}}">
                     <label for="directions_4" class="addrecipe-form-label main-font">Directions 4.</label>
-                    <input type="text" name="directions_4" class="form-control" id="directions_4" value="{{users_recipe.directions_4}}" >
+                    <input type="text" name="directions_4" class="form-control" id="directions_4"
+                        value="{{users_recipe.directions_4}}">
                     <label for="directions_5" class="addrecipe-form-label main-font">Directions 5.</label>
-                    <input type="text" name="directions_5" class="form-control" id="directions_5" value="{{users_recipe.directions_5}}" >
+                    <input type="text" name="directions_5" class="form-control" id="directions_5"
+                        value="{{users_recipe.directions_5}}">
                     <label for="directions_6" class="addrecipe-form-label main-font">Directions 6.</label>
-                    <input type="text" name="directions_6" class="form-control" id="directions_6" value="{{users_recipe.directions_6}}" >
+                    <input type="text" name="directions_6" class="form-control" id="directions_6"
+                        value="{{users_recipe.directions_6}}">
                     <label for="directions_7" class="addrecipe-form-label main-font">Directions 7.</label>
-                    <input type="text" name="directions_7" class="form-control" id="directions_7" value="{{users_recipe.directions_7}}" >
+                    <input type="text" name="directions_7" class="form-control" id="directions_7"
+                        value="{{users_recipe.directions_7}}">
                     <label for="directions_8" class="addrecipe-form-label main-font">Directions 8.</label>
-                    <input type="text" name="directions_8" class="form-control" id="directions_8" value="{{users_recipe.directions_8}}" >
+                    <input type="text" name="directions_8" class="form-control" id="directions_8"
+                        value="{{users_recipe.directions_8}}">
                 </div>
                 <div class="addrecipe-form-div">
                     <p class="recipe-form-subheading main-font">Cooking/Prep Info</p>
                     <label for="prep_time" class="addrecipe-form-label main-font">Preparation Time</label>
-                    <input type="text" name="prep_time" class="form-control" id="prep_time" value="{{users_recipe.prep_time}}">
+                    <input type="text" name="prep_time" class="form-control" id="prep_time"
+                        value="{{users_recipe.prep_time}}">
                     <label for="cook_time" class="addrecipe-form-label main-font">Cooking Time</label>
-                    <input type="text" name="cook_time" class="form-control" id="cook_time" value="{{users_recipe.cook_time}}" >
+                    <input type="text" name="cook_time" class="form-control" id="cook_time"
+                        value="{{users_recipe.cook_time}}">
                     <label for="total_time" class="addrecipe-form-label main-font">Total Time</label>
-                    <input type="text" name="total_time" class="form-control" id="total_time" value="{{users_recipe.total_time}}">
+                    <input type="text" name="total_time" class="form-control" id="total_time"
+                        value="{{users_recipe.total_time}}">
                     <label for="servings" class="addrecipe-form-label main-font">Servings</label>
-                    <input type="text" name="servings" class="form-control" id="servings" value="{{users_recipe.servings}}">
+                    <input type="text" name="servings" class="form-control" id="servings"
+                        value="{{users_recipe.servings}}">
                     <label for="cooking_temperature" class="addrecipe-form-label main-font">Cooking Temperature</label>
-                    <input type="text" name="cooking_temperature" class="form-control" id="cooking_temperature" value="{{users_recipe.cooking_temperature}}" >
+                    <input type="text" name="cooking_temperature" class="form-control" id="cooking_temperature"
+                        value="{{users_recipe.cooking_temperature}}">
                 </div>
             </div>
             <div class="modal-footer">
                 <!-- Button submitting the update to MongoDB -->
-                <button type="submit" class="btn main-font main-color shadow-effect" id="update-modal-button">Update Recipe</button>
+                <button type="submit" class="btn main-font main-color shadow-effect" id="update-modal-button">Update
+                    Recipe</button>
             </div>
         </div>
     </div>

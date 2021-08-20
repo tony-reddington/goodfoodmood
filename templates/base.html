@@ -21,21 +21,28 @@
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand main-font" href="{{ url_for('index') }}">GoodFoodMood</a>
-            <button class="navbar-toggler main-font" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler main-font" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0 main-font">
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('index') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('index') }}">Home</a>
+                    </li>
                     {% if session.username %}
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('profile', username=session['username']) }}">Profile</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('logout') }}">Log Out</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="{{ url_for('profile', username=session['username']) }}">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('add_recipe') }}">Add
+                            Recipe</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('logout') }}">Log
+                            Out</a></li>
                     {% else %}
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('login') }}">Log In</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('register') }}">Register</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('login') }}">Log
+                            In</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="{{ url_for('register') }}">Register</a></li>
                     {% endif %}
                 </ul>
             </div>
@@ -47,29 +54,29 @@
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                        <!-- Flashed message -->
-                        {% with notifications = get_flashed_messages(with_categories=true) %}
-                            {% if notifications %}
-                                {% for category, notification in notifications %}
-                                {% if category == "error" %}
-                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                        {{ notification }}
-                                        <button type="button" class="close" data-bs-dismiss="alert">
-                                            <span class="close-alert" aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                {% else %}
-                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                        {{ notification }}
-                                        <button type="button" class="close" data-bs-dismiss="alert">
-                                            <span class="close-alert" aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                {% endif %}
-                                {% endfor %}
-                            {% endif %}
-                        {% endwith %}
-                        <!-- block content that will apear over the background image -->
+                    <!-- Flashed message -->
+                    {% with notifications = get_flashed_messages(with_categories=true) %}
+                    {% if notifications %}
+                    {% for category, notification in notifications %}
+                    {% if category == "error" %}
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        {{ notification }}
+                        <button type="button" class="close" data-bs-dismiss="alert">
+                            <span class="close-alert" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    {% else %}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ notification }}
+                        <button type="button" class="close" data-bs-dismiss="alert">
+                            <span class="close-alert" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                    <!-- block content that will apear over the background image -->
                     {% block text_main_image %}
                     {% endblock %}
                 </div>
@@ -112,7 +119,8 @@
                         </li>
                     </ul>
                     <!-- Copyright line -->
-                    <div class="small text-center main-font copyright-text">Copyright &copy; GoodFoodMood <span id="year"></span></div>
+                    <div class="small text-center main-font copyright-text">Copyright &copy; GoodFoodMood <span
+                            id="year"></span></div>
                 </div>
             </div>
         </div>
