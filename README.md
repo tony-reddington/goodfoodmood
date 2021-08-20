@@ -201,3 +201,63 @@
 
 ### Unresolved Issues
   * The social media icons on hover won't change color on hover. I believe this is because of some imported style.
+
+## Deployment
+
+I fyou want to run this project locally within your own IDE please follow the instructions below:
+
+The below must be installed:
+
+* PIP
+* Python 3.7 (or newer version)
+* Git
+* A [mongodb](https://www.mongodb.com/) account
+
+### Instructions
+
+1. Download a clone of the GitHub [repository](https://github.com/tony-reddington/goodfoodmood) then select download Zip
+
+2. Open a terminal session in the unzip folder or cd to move to the correct location.
+
+3. A virtual environment is suggested for the Python interpreter, I suggest using Pythons built in virtual environment. Type the command line:
+```
+python -m venv <dir to install to e.g. .venv>
+```  
+Be Aware that your Python command may differ bepython3 or py
+
+4. Activate the .venv by typing the command line:
+```
+.venv\Scripts\activate 
+```
+This command line may vary depending on your operating system, please check the [Python Documentation](https://docs.python.org/3/library/venv.html) for further guidance.
+
+4. Ensure pip is the latest version by typing the command line below:
+```
+pip install --upgrade pip.
+```
+
+5. Install the neccesary modules by typing the command line below:
+```
+Pip install -r requirements.txt.
+```
+
+6. Within your local IDE you must create a file named `.flaskenv`.
+
+7. Within the .flaskenv file, you must create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `goodfoodmood`, with 2 collections named `users` and `recipes`. 
+
+8. If using VSCode you must create a folder named .vscode and a file named settings.json inside then add the below:
+
+```
+ "terminal.integrated.env.windows": {
+    "SECRET_KEY": "",
+    "DEV": "1",
+    "HOSTNAME": "0.0.0.0",
+    "PORT": "5000",
+    "MONGO_URI": "[Database uri here]",
+  }
+```
+
+9. You may now run the application with the command line:
+```
+python app.py
+```
