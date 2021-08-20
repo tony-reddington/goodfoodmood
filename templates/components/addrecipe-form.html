@@ -1,12 +1,12 @@
 <!-- MDB Bootstrap Modal for addrecipe.html page and linked to the add recipe button-->
 {% block form_modal %}
-<form class="modal fade colour" id="form-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+<form class="modal fade colour" id="form-modal" tabindex="-1" aria-labelledby="add-recipe-form-title" aria-hidden="true"
     method="POST" action="{{ url_for('add_recipe') }}">
     <div class="modal-dialog modal-dialog-scrollable modal-sm modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <!-- Form Title-->
-                <h5 class="modal-title main-font add-recipe-modal-header" id="exampleModalLabel">Add your Recipe</h5>
+                <h5 class="modal-title main-font add-recipe-modal-header" id="add-recipe-form-title">Add your Recipe</h5>
                 <!-- Button to close the addrecipe-form -->
                 <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
