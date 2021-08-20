@@ -134,3 +134,9 @@
 17. [GitHub](https://github.com/)
     - GitHub was used to host the code and website contents.
 
+## Testing
+
+* [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) - Custom CSS test validated and passed
+* [W3C Markup validator](https://validator.w3.org/) - HTML test validated and passed
+* [JSHint](https://jshint.com/) - Javascript test validated and passed
+* [PEP8](http://pep8online.com/) - Python test validated and passed
