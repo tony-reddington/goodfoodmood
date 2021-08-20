@@ -48,6 +48,12 @@ a {
     }
 }
 
+@media (max-width: 360px) {
+    .navbar-brand {
+        font-size: 0.8rem !important;
+    }
+}
+
 .copyright-text {
     color: #000000 !important;
 }
