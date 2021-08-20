@@ -85,8 +85,9 @@ a {
 }
 
 .card img {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
 }
 
 .card-body {
@@ -125,6 +126,10 @@ a {
         margin-bottom: 0px;
     }
 
+    .card img {
+        height: 150vw;
+    }
+
     .card-text {
         font-size: 0.9rem;
         font-family: Roboto;
@@ -135,9 +140,27 @@ a {
     }
 }
 
+@media (max-width: 576px) {
+    .card img {
+        height: 80vw;
+    }
+
+    .card-control {
+        margin-bottom: 0px;
+    }
+}
+
 @media (max-width: 768px) {
     .card {
         height: 90%;
+    }
+
+    .card img {
+        height: 80vw;
+    }
+
+    .card-control {
+        margin-bottom: 0px;
     }
     
     .card-text {
