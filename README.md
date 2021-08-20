@@ -282,3 +282,21 @@ echo web: python app.py > Procfile
 7. Proceed back to your terminal and add and commit the requirements.txt file and push to GitHub.
 8. Once these steps are completed, go back to Heroku and click "Deploy" and scroll down to "Automatic deploys" then proceed and click "Enable Automatic Deploys"
 9. You should then recieve a message stating that your app has been succesfully deployed.
+
+## Credits
+
+### Code
+* Start Bootstrap was use for the website structure.
+* MD Bootstrap was used for creating the Modals
+* Bootstrap was used for creating the cards and for responsiveness across different size devices. 
+* W3 Schools & Stack overflow were used to help find tips and solutions.
+
+### Content
+* All text throughout the website was written by the developer and recipe data extracted partially from recipe websites.
+
+### Media
+* The main background image was downloaded from [Istock](https://www.istockphoto.com/) with credit to fcafotodigital.
+* Recipe image links from recipe pages with credit to https://kirbiecravings.com, https://wellnourished.com.au, https://images.squarespace-cdn.com, https://www.budgetbytes.com, https://images.immediate.co.uk and https://pickyeaterblog.com
+### Acknowledgements
+* My mentor Richard Wells for his guidance, expertise and support.
+* My Husband, Family and friends for testing the website across multiple devices.
