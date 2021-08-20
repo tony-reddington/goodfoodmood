@@ -121,7 +121,7 @@ a {
     .card {
         height: 90%;
     }
-    
+
     .card-control {
         margin-bottom: 0px;
     }
@@ -162,7 +162,7 @@ a {
     .card-control {
         margin-bottom: 0px;
     }
-    
+
     .card-text {
         font-size: 0.9rem;
         height: 30%;
@@ -346,11 +346,13 @@ a {
 
 /* flash alert styling */
 
-.alert-success, .alert-danger {
+.alert-success,
+.alert-danger {
     text-align: center;
 }
 
-.alert-dismissible, .alert {
+.alert-dismissible,
+.alert {
     padding: 1rem 0;
 }
 
