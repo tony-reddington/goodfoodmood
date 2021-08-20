@@ -87,7 +87,15 @@
  * Different sections for meal types
  * Search function
  * Remove imported css to improve page loading speed.
- * A more dynamic relational database to avoid so many if statements for inputs. 
+ * A more dynamic relational database to avoid so many if statements for inputs.
+
+# Information Architecture
+## users data
+![users data](static/images/users-data.JPG)|
+
+## recipes data
+![users data](static/images/recipes-data.JPG)
+
 ## Technology Used
 
 ### Languages used
