@@ -3,7 +3,7 @@
 # GoodFoodMood
 ![responsive website](static/images/responsive-image.JPG)
 
-## The goal of this website is to share cooking recipes that will be populated by both the owner and registered users that appear on tiles on the main page. 
+## The goal of this website is to share cooking recipes that will be populated by both the owner and registered users that appear on tiles on the main page. Each user has their own profile page where they can store, edit or delete their uploaded recipes.
 
 ### User Experience (UX)
 
@@ -38,7 +38,7 @@
 ### Design
 
 #### Colour Scheme
- - The colours used across the website are Purple which is said to invoke creativity, Yellow that invokes happiness with Grey for borders/shading and classic Black and White being used for font colour.
+ - I researched multiple recipe websites to check their colour schemes and ended up with the colours below. The colours used across the website are Purple which is said to invoke creativity, Yellow that invokes happiness with Grey for borders/shading and classic Black and White being used for font colour.
 
     ![](static/images/colour-scheme.JPG)
 
@@ -46,7 +46,7 @@
  - The font used across the website is Monserrat because of it's simplicity and legibility with Sans Serif as the fall back font.
 
 #### Imagery
- - The only image used for the website is on the index.html page. It contains food items around the parimeter of the image and fits in with the recipe website theme. The rest of the recipe images are uploaded by the user and these images are retrieved from Mongodb database.
+ - The only image used for the website is on the index.html page. It contains food items around the parimeter of the image and fits in with the recipe website theme. The rest of the recipe images are uploaded by the user/admin via a link and these are retrieved from Mongodb database.
 
 #### Wireframes
 
