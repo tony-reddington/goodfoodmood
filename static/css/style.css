@@ -148,7 +148,7 @@ a {
 
 @media (max-width: 576px) {
     .index-profile-img {
-        height: 80vw !important;
+        height: 80vw;
     }
 
     .card-control {
@@ -181,12 +181,6 @@ a {
         border-radius: 10px;
     }
 }
-
-@media (max-width: 992px) {
-    .index-profile-img {
-        height: 40vw;
-    }
-
 /* form style on register.html */
 
 .register-form {
