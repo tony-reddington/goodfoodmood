@@ -182,6 +182,11 @@ a {
     }
 }
 
+@media (max-width: 992px) {
+    .index-profile-img {
+        height: 40vw;
+    }
+
 /* form style on register.html */
 
 .register-form {
