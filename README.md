@@ -3,7 +3,7 @@
 # GoodFoodMood
 ![responsive website](static/images/responsive-image.JPG)
 
-## The goal of this website is to share cooking recipes that will be populated by both the owner and registered users that appear on cards on the main page. Each user has their own profile page where they can store, edit or delete their uploaded recipes.
+## The goal of this website is to share cooking recipes that will be created by both the owner and registered users that appear on cards on the main page. Each user has their own profile page where they can store, edit or delete their uploaded recipes.
 
 ### Table of content
 
@@ -40,10 +40,10 @@
 
 #### The user goals will be to:
 * Easily navigate through the website
-* Ability to access the website using multiple devices
-* Create an account to store created recipes
+* Access the website using multiple devices
+* Create a profile to store created recipes
 * Create recipes
-* Update recipes
+* Update created recipes
 * Delete created recipes
 
 ### User Stories
@@ -53,7 +53,7 @@
 * a page displaying all uploaded recipes.
 * the website responsive across devices so I can swap and change devices as I wish.
 * the page laid out neatly so that I can find information effortlessly.
-* to create a profile that will be home to all my recipes and allow me to create then replace, update and delete recipes that i have uploaded to the website.
+* to create a profile that will be home to all my recipes and allow me to create recipes then update and delete recipes that i have uploaded to the website.
 
 ### Site owner goals
 
@@ -62,7 +62,7 @@
 * to display all recipes on the home page.
 * to provide responsiveness across all device screen sizes.
 * to lay out all recipe information as clearly as possibly so users can find everything with ease.
-* to allow users to create profiles, giving them access to create, replace, update and delete recipes.
+* to allow users to create profiles, giving them access to create recipes then update and delete recipes that users have uploaded to the website.
 
 ### Design
 
@@ -95,26 +95,26 @@
  * The website is made up of 5 x pages. 2 of which are only visible to a user when they create a profile.
  * #### Home page
    * The Home page is made up of a brand logo and navigation bar along the top of the page. The navbar scrolls with the user to help them keep on track. The navigation bar changes to a hamburger button on smaller screens.
-   * A background image appears below the navbar with a welcome message overlay in the centre.
-   * Recipes are retrieved from MongoDB and displayed in a card view showing the user an overview of the recipe name, image and description. A button can then be clicked to view the full recipe.
+   * A background image is displayed with a welcome message overlay in the centre.
+   * Recipes are retrieved from MongoDB and displayed in a card view showing the user a recipe overview that displays the recipe name, image and description. A button can then be clicked to view the full recipe.
    * Social media icons for Twitter, Facebook and Instagram appear in the footer.
  * #### Login page
    * A form is displayed over the main background image with inputs for a user to enter their username and password.
    * A button then checks that the username and password exists within the MongoDB database and returns a flash message.
-   * Once successful the user will have access to their profile page and an the Add Recipe button.
+   * Once successful the user will have access to their profile page and an the Add Recipe navbar link.
  * #### Register page
-   * A form is displayed over the main background image with inputs for a user to enter their username,password and a field to verify their entered password.
-   * A button then adds the username and password to the MongoDB database if successful and returns a flash message above the form.
-   * The user will then have access to their profile page and an the Add Recipe button.
+   * A form is displayed over the main background image with inputs for a user to enter their username,password and an input field to verify their entered password.
+   * A button then adds the username and password to the MongoDB database and if successful, returns a flash message above the form.
+   * The user will then have access to their profile page and an the Add Recipe navbar link.
  * #### Profile page
    * A welcome "username" message appears over the main background image.
-   * The users uploaded recipes are retrieved from MongoDB and displayed in cards.
+   * The users uploaded recipes are retrieved from MongoDB and displayed in cards displaying the recipe name and image.
    * The cards house 2 x buttons for editing and deleting the users recipes and both activate modal pop ups.
-   * The editing modal display's a form showing all the data the user previously input allowing them to make edits or additions where requiredwith a button along the bottom to submit the changes to MongoDB.
-   * The delete modal displays a warning to users to confirm that their intention is to delete with a button on the bottom which deletes the recipe from MongoDB.
+   * The editing modal display's a form showing all the data that the user previously added allowing them to make edits or add recipe info where required with a button along the bottom to submit the changes to MongoDB.
+   * The delete modal displays a warning to users to confirm their intention to delete with a button on the bottom which deletes the recipe from MongoDB.
  * #### Add Recipe page
-   * The add recipe page contains an user instruction and button to activate a form modal.
-   * The add recipe form modal displays provides a user with labels and fields to enter their recipe. The add recipe button at eh end of the form submits the recipe to MongoDB that will in tirn be displayed on the homepage and on their profile.
+   * The add recipe page contains an user instruction and button to activate a form modal to add a recipe.
+   * The add recipe form modal displays labels and fields for the user to add their recipe. The add recipe button at the end of the form submits the recipe to MongoDB that will in turn be displayed on the homepage and on their profile.
 
 ### Features for future implimentation
  * Different sections for meal types
@@ -149,13 +149,13 @@
 3.  [Google fonts](https://fonts.google.com/)
     - The Monserrat font that i used across the website was taken from Google fonts.
 4.  [Istockphoto](https://www.istockphoto.com/)
-    - Istockphoto was used for all the main background website image.
+    - Istockphoto was used for the main background website image.
 5.  [TinyJPG](https://tinyjpg.com/)
-    - Tinyjpg was used to reduce the size of all the background image.
+    - Tinyjpg was used to reduce the size of the background image.
 6.  [Befunky photo editor](https://www.befunky.com/)
     - Befunky photo editor was used to resize images.
 7.  [Bootstrap](https://getbootstrap.com/)
-    - Bootstrap was used for the recipe cards and to make the website more responsive in certain areas.
+    - Bootstrap was used for the recipe cards and to make the website more responsive across different device sizes.
 8.  [Coolers](https://coolors.co/)
     - Coolers was used to help generate a colour palette for the entire site.
 9.  [MongoDB](https://www.mongodb.com/)
@@ -209,7 +209,7 @@
     * The website is responsive across all device screen sizes.
 4. the page laid out neatly so that I can find information effortlessly.
     * Everything on the website is clearly labelled making it easy for users to navigate.
-5. to create a profile that will be home to all my recipes and allow me to create then replace, update and delete recipes that i have uploaded to the website.
+5. to create a profile that will be home to all my recipes and allow me to create recipes then update and delete recipes that i have uploaded to the website.
     * Each user profile page gives the user access to their uploaded recipes with option to edit/delete their existing uploaded recipes and an add recipe button on the navbar allowing them to upload recipes.
 
 -   #### Site Owner Goals Testing
@@ -222,7 +222,7 @@
     * Website responsive on all devices.
 4. to lay out all recipe information as clearly as possibly so users can find everything with ease.
     * The website is easily navigated.
-5. to allow users to create profiles, giving them access to create, update and delete recipes.
+5. * to allow users to create profiles, giving them access to create recipes then update and delete recipes that users have uploaded to the website.
     * Users are able to create,update and delete recipes once they're registered.
 
 ### Further Testing
@@ -234,10 +234,10 @@
  * The Start Bootstrap template imported was causing styling issues.
     - The only solution i had was to use "!important" within CSS to rectify.
  * The first modal created wouldn't link correctly and open the correct recipe information.
-    - The solution was to create and dynamic id to only show the selected recipe.
+    - The solution was to create a dynamic id using the MongoDB _id to only show the selected recipe.
 
 ### Unresolved Issues
-  * The social media icons on hover won't change color on hover. I believe this is because of some imported style.
+  * The social media icons on hover won't change colour. I believe this is due to some imported style conflict.
 
 ## Deployment
 
@@ -311,13 +311,13 @@ pip3 freeze –local > requirements.txt
 ```
 echo web: python app.py > Procfile
 ```
-3. One the Procfile has been created you access the file and delete the empty line at the bottom and save the file to avoid any issues.
+3. One the Procfile has been created, access the file and delete the empty line at the bottom and save the file to avoid issues.
 3. Proceed to the [Heroku](https://id.heroku.com/login) website where you should log in and click "New" then "Create new app" and then proceed to selecting the closest region to you.
-4. Proceed to the "Deploy" at the top, then to "Deploy method". Once found,  select the github button. Link to GitHub by entering your website repo name and clicking search and connect.
-5. Click "Setting" on the top navbar and scroll to "Config Vars" then click the "Reveal Config Vars" button.
-6. Copy the key and value pairs from your IDE env file and enter into the fields provided and click "Add".
+4. Proceed to the "Deploy" nav link at the top, then to "Deploy method". Once found, select the github button. Link to GitHub by entering your website repo name and clicking search and connect.
+5. Click "Settings" on the top navbar and scroll to "Config Vars" then click the "Reveal Config Vars" button.
+6. Copy the key, value pairs from your IDE env file and enter into the fields provided on Heroku.
 7. Proceed back to your terminal and add and commit the requirements.txt file and push to GitHub.
-8. Once these steps are completed, go back to Heroku and click "Deploy" and scroll down to "Automatic deploys" then proceed and click "Enable Automatic Deploys"
+8. Once these steps are completed, go back to Heroku and click "Deploy" and scroll down to "Automatic deploys" section then proceed and click "Enable Automatic Deploys"
 9. You should then recieve a message stating that your app has been succesfully deployed.
 
 ## Credits
@@ -329,7 +329,7 @@ echo web: python app.py > Procfile
 * W3 Schools & Stack overflow were used to help find tips and solutions.
 
 ### Content
-* All text throughout the website was written by the developer and recipe data extracted partially from recipe websites.
+* All text throughout the website was written by the developer with recipe data extracted partially from recipe websites.
 
 ### Media
 * The main background image was downloaded from [Istock](https://www.istockphoto.com/) with credit to fcafotodigital.
